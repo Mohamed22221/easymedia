@@ -29,6 +29,7 @@ const AboutHeader = ({title}) => {
 }
 const AboutHeaderStyle =styled.div`
 position: relative;
+
 .main-apoutmedia{
 display: flex;
 justify-content: space-between;

@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutHeader from '../components/home/AboutHeader'
 import Header from '../components/home/Header'
+import Servcises from '../components/home/Servcises'
 import VideoAbout from '../components/home/VideoAbout'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <Header/>
         <AboutHeader/>
         <VideoAbout/>
+        <Servcises/>
     </div>
   )
 }

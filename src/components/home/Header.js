@@ -55,6 +55,7 @@ svg{
     width: 101%;
 }
 .content-header{
+  
   display: flex;
   bottom:  0;
   z-index: 1;
