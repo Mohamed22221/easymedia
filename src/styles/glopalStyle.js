@@ -43,7 +43,7 @@ const GlopalStyle = createGlobalStyle`
   }
 body{
      font-family: 'Nunito', sans-serif;
-     height: 3000px;
+     height: 7000px;
 }
 
 

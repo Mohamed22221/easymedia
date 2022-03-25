@@ -63,13 +63,19 @@ const ServciesStyle = styled.div`
     gap: 70px 70px  ;
     display: grid;
     padding: 3rem 4rem;
-    @media (max-width:2424px ) {
-        grid-template-columns: repeat( auto-fit, minmax(420px, 1fr) );
+    @media (max-width:2500px ) {
+        grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
     }
-    @media (max-width:1724px ) {
-        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    @media (max-width:1700px ) {
+        grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
     }
-    @media (max-width:1232px ) {
+    @media (max-width:1495px ) {
+        grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) );
+    }
+    @media (max-width:1295px ) {
+        grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+    }
+    @media (max-width:932px ) {
         grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     }
     @media (max-width:600px ) {

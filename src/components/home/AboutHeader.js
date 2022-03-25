@@ -5,10 +5,13 @@ import apoutimg from '../../img/02.png'
 import animateimg1 from "../../img/flat1.png"
 import animateimg2 from "../../img/flat2.png"
 
-const AboutHeader = ({title}) => {
+const AboutHeader = () => {
   return (
     <AboutHeaderStyle>
-      <PigTitlePage title="About"/>
+      <PigTitlePage title="About"
+       h1="var(--background-dark-color)"
+       spanprimary="var(--primary-color)"
+       />
       <div className='main-apoutmedia'>
         <div className='left-apout'>
         <p>A paragraph is a group of related subdivisions of a research paper begin and end and, thus, help th sentences that support one main idea. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next paragraph or section. Paragraphs show where the subdivisions of a research paper begin and end and, thus, help the  related sentences that support reader see the organization of the essay and grasp its main points.</p>

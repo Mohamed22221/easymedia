@@ -4,7 +4,7 @@ import superimg from "../../img/01.png"
 import animateimg from "../../img/flat1.png"
 import animateimg1 from "../../img/flat2.png"
 import Button from '../glopal/Button'
-
+import { Container } from '@mui/material';
 
 const Header = ({title}) => {
   return (
@@ -16,6 +16,7 @@ const Header = ({title}) => {
           <path id="Path_15" data-name="Path 15" d="M1924,1030c-1.33.69-2.67,1.38-4,2.05-36.23,18.6-70.98,34.47-104.29,47.95-215.53,87.19-371.18,74.15-484.71,50-59.47-12.65-105.4-31.81-149.79-50-53.73-22.02-105.19-42.63-175.63-48.57l914.42-1.42Z" fill="#e53516" />
         </g>
       </svg>
+      <Container maxWidth="xl">
       <div className='content-header'>
         <div className='left-header'>
           <div className='super-img'>
@@ -36,6 +37,7 @@ const Header = ({title}) => {
 
         </div>
       </div>
+      </Container>
 
     </HeaderStyle>
   )

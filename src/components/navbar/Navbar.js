@@ -13,7 +13,7 @@ const Navbar = () => {
     setToggle(false);
   };
   return (
-    <>
+    
       <nav>
          
           <div className="logo">
@@ -52,7 +52,7 @@ const Navbar = () => {
           
        
       </nav>
-    </>
+    
   );
 };
 
