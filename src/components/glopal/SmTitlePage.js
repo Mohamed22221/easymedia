@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const SmTitlePage = ({title}) => {
+    useEffect(()=>{
+        AOS.init({
+          duration:1000
+        });
+      },[])
   return (
-    <SmStyleTitle>
+    <SmStyleTitle data-aos="fade-down">
         <h1>Our <span>{title}</span></h1>
     </SmStyleTitle>
   )
@@ -30,7 +37,7 @@ const SmStyleTitle =styled.div`
         content: "";
         position: absolute;
         bottom: -9px;
-        background-color: black;
+        background-color: var(--primary-color);
         width: 70px;
         height: 2px;
     }

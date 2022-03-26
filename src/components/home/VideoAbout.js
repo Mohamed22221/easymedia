@@ -1,21 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from "../../img/apout.mp4"
+import Video from "../../img/video01.mp4"
+import Video1 from "../../img/video2.mp4"
+
+
+
 const VideoAbout = () => {
   return (
-    <VideoStyle width="100%" autoplay loop > 
-        <source  src={Video} type="video/mp4" />
-        <source  src={Video} type="video/ogg" />
+    <VideoStyle src={Video1} 
+    muted  
+    type="video/mp4"  
+    autoPlay={true}
+    preLoad="auto"
+    loop
+    >
+       
     </VideoStyle>
   )
 }
 const VideoStyle = styled.video`
-padding: 8rem 0 0 0;
+margin: 9rem 0 1rem 0;
+width:100%;
 
-video{
 
-
-}
 
 `
 export default VideoAbout

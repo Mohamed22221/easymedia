@@ -6,6 +6,7 @@ import animateimg1 from "../../img/flat1.png"
 import animateimg2 from "../../img/flat2.png"
 
 const AboutHeader = () => {
+  
   return (
     <AboutHeaderStyle>
       <PigTitlePage title="About"
@@ -14,14 +15,14 @@ const AboutHeader = () => {
        />
       <div className='main-apoutmedia'>
         <div className='left-apout'>
-        <p>A paragraph is a group of related subdivisions of a research paper begin and end and, thus, help th sentences that support one main idea. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next paragraph or section. Paragraphs show where the subdivisions of a research paper begin and end and, thus, help the  related sentences that support reader see the organization of the essay and grasp its main points.</p>
+        <p data-aos="fade-right">A paragraph is a group of related subdivisions of a research paper begin and end and, thus, help th sentences that support one main idea. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next paragraph or section. Paragraphs show where the subdivisions of a research paper begin and end and, thus, help the  related sentences that support reader see the organization of the essay and grasp its main points.</p>
         </div>
         <div className='right-apout'>
-          <img src={apoutimg} />
+          <img src={apoutimg} data-aos="fade-down" />
         </div>
         
-          <img src={animateimg1} className="animateimg1"/>
-          <img src={animateimg2} className="animateimg2"/>
+          <img src={animateimg1} className="animateimg1" data-aos="fade-down"/>
+          <img src={animateimg2} className="animateimg2" data-aos="fade-down"/>
 
 
       

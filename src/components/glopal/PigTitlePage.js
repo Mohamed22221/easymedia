@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const PigTitlePage = ({title , h1 ,spanprimary }) => {
+    useEffect(()=>{
+        AOS.init({
+          duration:2000
+        });
+      },[])
   return (
     <PigStyleTitle>
-       <div className='main-title'>
+       <div className='main-title' data-aos="fade-down">
        <h1 style={{color:h1}}>{title}</h1>
         <h3 >easy<span style={{color:spanprimary}}>media.</span></h3>
         </div> 
-
     </PigStyleTitle>
   )
 }

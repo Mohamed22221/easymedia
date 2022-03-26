@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import superimg from "../../img/01.png"
 import animateimg from "../../img/flat1.png"
 import animateimg1 from "../../img/flat2.png"
 import Button from '../glopal/Button'
 import { Container } from '@mui/material';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = ({title}) => {
+  useEffect(()=>{
+    AOS.init({
+      duration:2000
+    });
+  },[])
   return (
     <HeaderStyle>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1925 1047.96">
@@ -19,21 +26,23 @@ const Header = ({title}) => {
       <Container maxWidth="xl">
       <div className='content-header'>
         <div className='left-header'>
-          <div className='super-img'>
-            <img src={superimg} />
+          <div className='super-img'
+     data-aos-anchor-placement="top-bottom"
+   >
+            <img src={superimg} data-aos="fade-up" />
           </div>
           <div className='animateimg-2'>
-            <img src={animateimg} className="animateimg1" />
+            <img src={animateimg} className="animateimg1" data-aos="fade-down" />
 
           </div>
           <div className='animateimg-3'>
-            <img src={animateimg1} className="animateimg2" />
+            <img src={animateimg1} className="animateimg2" data-aos="fade-up" />
           </div>
         </div>
         <div className='right-header'>
-          <h1>Easy Way</h1>
-          <p>With easy media everything is too easy .</p>
-          <Button title="Know More"/>
+          <h1 data-aos="fade-down">Easy Way</h1>
+          <p data-aos="zoom-in">With easy media everything is too easy .</p>
+          <Button title="Know More" />
 
         </div>
       </div>

@@ -10,20 +10,20 @@ const ContactHome = () => {
         <PigTitlePage title="Contact"
             h1="white"
             spanprimary="white"/>
-         <form>
-            <div className='one-input'>
+         <form  >
+            <div className='one-input' data-aos="fade-down">
                 <label>Your Name</label>
                 <input type="text" placeholder="Please write your name here" />
             </div>
-            <div className='one-input'>
+            <div className='one-input' data-aos="fade-down">
                 <label>Your E-mail</label>
                 <input type="text" placeholder="Please write your email here" />
             </div>
-            <div className='one-input end'>
+            <div className='one-input end' data-aos="fade-down">
                 <label>Your Message</label>
                 <input type="text" placeholder="Please write your Message here" />
             </div>
-            <div className='button'>
+            <div className='button' data-aos="fade-down">
                <button>Send Message</button> 
             </div>
             
@@ -38,13 +38,8 @@ const ContactHome = () => {
 const ContactStyle = styled.div`
  overflow: hidden;
  position: relative;
- height: 160vh;
-    
- @media (max-width:585px) {
-      
-        height: 200vh;
-       
-     }
+
+
 
  .img{
      position: relative;
