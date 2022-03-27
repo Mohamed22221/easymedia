@@ -35,6 +35,11 @@ const StyleFilter = styled.div`
         height: 250px;
         &:hover img{
           transform:scale(1.1) ;
+          overflow: hidden;
+        }
+        &:hover h2{
+          transform:scale(1.2) ;
+          color: white;
           
         }
     
@@ -70,14 +75,15 @@ const StyleFilter = styled.div`
  width: 100%;
  height: 100%;
  color: white;
- padding: 250px 0 0 0;
+ padding: 147px 0 0 0;
  text-align: center;
  transition:all 0.5s;
  cursor: pointer;
  h2{
-    font-style: italic;
+    transition: 0.5s;
     font-weight: 300px;
-     font-size: 34px;
+     font-size: 30px;
+     color: var(--primary-color);
  }
 p{
    
@@ -85,7 +91,8 @@ p{
 }
  &:hover{
     background-color :#e5351663 ;
-    padding: 90px 0 0 0;
+    padding: 80px 0 0 0;
+    color: white;
 
  }
  
