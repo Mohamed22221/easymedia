@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/easymedia/static/css/main.41049b98.css",
-    "main.js": "/easymedia/static/js/main.f888cc05.js",
-    "static/media/video01.mp4": "/easymedia/static/media/video01.994d851757f8e9fcab6d.mp4",
-    "static/media/video2.mp4": "/easymedia/static/media/video2.44bbcd0b20fb849bcabd.mp4",
+    "main.css": "/easymedia/static/css/main.986522e7.css",
+    "main.js": "/easymedia/static/js/main.7d432ddb.js",
+    "static/media/animation.mp4": "/easymedia/static/media/animation.f53509470a0889b7381e.mp4",
     "static/media/01.png": "/easymedia/static/media/01.f3815a3cd764024b30ac.png",
     "static/media/02.png": "/easymedia/static/media/02.9e89b89f45b0fbb89888.png",
+    "static/media/team-07.jpg": "/easymedia/static/media/team-07.d6978a99fd889f8b2677.jpg",
+    "static/media/team-06.jpg": "/easymedia/static/media/team-06.06a6b7e95e13f4f1c062.jpg",
     "static/media/logo.png": "/easymedia/static/media/logo.b6c31dd0c01bac2249e6.png",
+    "static/media/team-08.jpg": "/easymedia/static/media/team-08.6771c030b16ecd4bd1b5.jpg",
+    "static/media/team-04.jpg": "/easymedia/static/media/team-04.56b4c25c832f8217c593.jpg",
+    "static/media/team-02.jpg": "/easymedia/static/media/team-02.8b2faa8b4be1d0f81112.jpg",
+    "static/media/team-03.jpg": "/easymedia/static/media/team-03.4bba669eba9d941391c5.jpg",
     "static/media/flat1.png": "/easymedia/static/media/flat1.b76ffa13d94e885c30d2.png",
     "static/media/svg1.svg": "/easymedia/static/media/svg1.50dd940fa440ce555f55b9a69c5ca5f2.svg",
     "static/media/cvgcontact.svg": "/easymedia/static/media/cvgcontact.54ce7e30fd6e3ff0fbe1a648682d425c.svg",
@@ -16,11 +21,11 @@
     "static/media/svg4.svg": "/easymedia/static/media/svg4.d74759ff67217a53f5d2a593bdc8e99e.svg",
     "static/media/svg3.svg": "/easymedia/static/media/svg3.e95819c280592bc9e8863567defe4c6e.svg",
     "index.html": "/easymedia/index.html",
-    "main.41049b98.css.map": "/easymedia/static/css/main.41049b98.css.map",
-    "main.f888cc05.js.map": "/easymedia/static/js/main.f888cc05.js.map"
+    "main.986522e7.css.map": "/easymedia/static/css/main.986522e7.css.map",
+    "main.7d432ddb.js.map": "/easymedia/static/js/main.7d432ddb.js.map"
   },
   "entrypoints": [
-    "static/css/main.41049b98.css",
-    "static/js/main.f888cc05.js"
+    "static/css/main.986522e7.css",
+    "static/js/main.7d432ddb.js"
   ]
 }
