@@ -4,7 +4,7 @@ import contactsvg from"../../img/cvgcontact.svg"
 import PigTitlePage from '../glopal/PigTitlePage'
 const ContactHome = () => {
   return (
-    <ContactStyle>
+    <ContactStyle id='Contact'>
                
         <div className='img'>
         <PigTitlePage title="Contact"

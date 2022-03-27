@@ -15,7 +15,7 @@ const Header = ({title}) => {
     });
   },[])
   return (
-    <HeaderStyle>
+    <HeaderStyle id="Home" >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1925 1047.96">
         <g id="Group_11" data-name="Group 11" transform="translate(1 -100)">
           <path id="Path_13" data-name="Path 13" d="M1920,1032.05V100H0v933.49c36.85,18.07,72.05,33.47,105.71,46.51H719.97c59.48-21.81,118.45-42.27,197.93-48.43l87.68-.14c70.44,5.94,121.9,26.55,175.63,48.57h634.5Z" fill="#e53516" />
@@ -24,7 +24,7 @@ const Header = ({title}) => {
         </g>
       </svg>
       <Container maxWidth="xl">
-      <div className='content-header'>
+      <div className='content-header' >
         <div className='left-header'>
           <div className='super-img'
      data-aos-anchor-placement="top-bottom"

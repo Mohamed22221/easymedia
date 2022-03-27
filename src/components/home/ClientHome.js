@@ -5,7 +5,7 @@ import SmTitlePage from '../glopal/SmTitlePage'
 
 const ClientHome = () => {
   return (
-    <ClientStyle >
+    <ClientStyle id='Client'>
         <SmTitlePage title="Clients"/>
         <div className='paragraph'>
             <p data-aos="fade-right">lorem lorem loreml orem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>

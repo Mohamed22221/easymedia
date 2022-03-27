@@ -8,22 +8,22 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const FotterHome = () => {
   return (
     <FotterStyle >
-        <div className='main-fotter' data-aos="fade-down">
-        <div className='item-fotter'>
+        <div className='main-fotter' >
+        <div className='item-fotter' data-aos="fade-down">
             <h2>Lorem</h2>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
         </div>
-        <div className='item-fotter'>
+        <div className='item-fotter' data-aos="fade-down">
             <h2>Lorem</h2>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
             <p><a href='#'>lorem ispam</a></p>
         </div>
-        <div className='item-fotter'>
+        <div className='item-fotter' data-aos="fade-down">
             <h2>Social media</h2>
             <a href='#'><FacebookIcon className='icon' /></a>
             <a href='#'><InstagramIcon className='icon' /></a>
@@ -31,7 +31,7 @@ const FotterHome = () => {
             <a href='#'><LinkedInIcon className='icon'/></a>
         </div>
         </div>
-        <div className='copy-right'>
+        <div className='copy-right' data-aos="fade-down">
         <h2>Copyright<span><CopyrightIcon className='copy'/></span></h2>
         </div>
        
@@ -92,6 +92,7 @@ const FotterStyle = styled.div`
         letter-spacing: 2px;
         padding: 80px 0 40px;
         h2{
+            padding-right: 18px;
             position: relative;
             span .copy{
             position: absolute;
@@ -100,13 +101,14 @@ const FotterStyle = styled.div`
         }
         &::after{
             position: absolute;
+            
             content: "";
-            top: -40px;
+            top: -50px;
             width: 250px;
             height: 1px;
             color: white;
             background-color: white;
-            left: 50%;
+            left: 44%;
             transform: translate(-46%);
         }
         }

@@ -17,6 +17,9 @@ const GlopalStyle = createGlobalStyle`
     padding: 0;
    
 }
+html {
+  scroll-behavior: smooth;
+}
 @keyframes MoveUpDown {
     0%, 100% {
     left: 0;

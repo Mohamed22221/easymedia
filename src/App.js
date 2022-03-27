@@ -1,5 +1,6 @@
 import { Routes, Route} from "react-router-dom";
 import Navbar from './components/navbar/Navbar';
+import Carrier from "./pages/Carrier";
 import Home from './pages/Home';
 
 function App() {
@@ -7,9 +8,10 @@ function App() {
     <div className="App">
       <Navbar/>
       
-      <Routes>
+      <Routes>Carrier
         <Route path="/" element={<Home/>} />
         <Route path="easymedia" element={<Home/>} />
+        <Route path="Careers" element={<Carrier/>} />
       </Routes>
     </div>
   );

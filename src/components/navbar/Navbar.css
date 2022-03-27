@@ -74,10 +74,10 @@ nav {
   @media screen and (max-width: 1000px) {
     nav {
      height: 70px;
-     padding: 2rem;
+     padding: 1.7rem;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 940px) {
     .toggle-button {
       display: block;
     }
@@ -95,7 +95,7 @@ nav {
     }
   
     ul li {
-      padding: 2rem 0;
+      padding: 1.5rem 0;
       font-size: 1.2rem;
     }
   

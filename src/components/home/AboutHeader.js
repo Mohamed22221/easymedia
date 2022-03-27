@@ -8,7 +8,7 @@ import animateimg2 from "../../img/flat2.png"
 const AboutHeader = () => {
   
   return (
-    <AboutHeaderStyle>
+    <AboutHeaderStyle id='About'>
       <PigTitlePage title="About"
        h1="var(--background-dark-color)"
        spanprimary="var(--primary-color)"
