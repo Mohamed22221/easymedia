@@ -23,7 +23,7 @@ setMenue(FillterData)
           <div className='title-portfolio' data-aos="fade-down">
           <h5>Selected works</h5>
           <h1>Our Projects</h1>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+          <p>We present to you some of our projects</p>
           </div>
           <PutPortfolio  Filter={Filter} />
           <FilterData menueItems={menueItems}/>

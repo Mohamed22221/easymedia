@@ -9,13 +9,24 @@ const AboutHeader = () => {
   
   return (
     <AboutHeaderStyle id='About'>
+      
       <PigTitlePage title="About"
        h1="var(--background-dark-color)"
        spanprimary="var(--primary-color)"
        />
       <div className='main-apoutmedia'>
         <div className='left-apout'>
-        <p data-aos="fade-right">A paragraph is a group of related subdivisions of a research paper begin and end and, thus, help th sentences that support one main idea. In general, paragraphs consist of three parts: the topic sentence, body sentences, and the concluding or the bridge sentence to the next paragraph or section. Paragraphs show where the subdivisions of a research paper begin and end and, thus, help the  related sentences that support reader see the organization of the essay and grasp its main points.</p>
+        <p data-aos="fade-right">Easy Media is a Marketing Company based in 
+Kuwait. In today’s day and age, marketing is very in-
+tegral to any company that aims for success. Our 
+Job is to assist the companies in their marketing 
+journey, making it fruitful and successful. Our 
+target market is very much dependent on our cli-
+ents, target market, as we shape each and every 
+plan carefully for our clients, needs to best serve 
+their interests. We enable our clients to reach 
+their goals by removing the barriers in their way 
+that stop them from reaching their potential. </p>
         </div>
         <div className='right-apout'>
           <img src={apoutimg} data-aos="fade-down" />
