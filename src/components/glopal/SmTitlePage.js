@@ -19,16 +19,16 @@ const SmStyleTitle =styled.div`
     padding:0rem 4rem;
     position: relative;
     @media (max-width:1000px) {
-    padding: 0rem 2.2rem;    
+    padding: 0rem 2rem;    
     }
     
     h1{
-        font-size: 38px;
+        font-size: 32px;
         color: var(--background-dark-color);
         
     }
     h1::first-letter{
-        font-size: 45px; 
+        font-size: 34px; 
 
     }
 
@@ -38,7 +38,7 @@ const SmStyleTitle =styled.div`
         position: absolute;
         bottom: -9px;
         background-color: var(--primary-color);
-        width: 70px;
+        width: 60px;
         height: 2px;
     }
     span{

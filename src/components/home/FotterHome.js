@@ -51,7 +51,9 @@ const FotterStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media (max-width:500px) {
+        justify-content: center;   
+    }
     .item-fotter{
         
         padding: 15px;
