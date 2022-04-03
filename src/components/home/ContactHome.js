@@ -4,26 +4,27 @@ import contactsvg from"../../img/cvgcontact.svg"
 import PigTitlePage from '../glopal/PigTitlePage'
 const ContactHome = () => {
   return (
-    <ContactStyle id='Contact'>
+    <ContactStyle id='Contact' >
                
-        <div className='img'>
+        <div className='img' >
         <PigTitlePage title="Contact"
             h1="white"
-            spanprimary="white"/>
-         <form  >
-            <div className='one-input' data-aos="fade-down">
+            spanprimary="white"
+            />
+         <form >
+            <div className='one-input' >
                 <label>Your Name</label>
                 <input type="text" placeholder="Please write your name here" />
             </div>
-            <div className='one-input' data-aos="fade-down">
+            <div className='one-input' >
                 <label>Your E-mail</label>
                 <input type="text" placeholder="Please write your email here" />
             </div>
-            <div className='one-input end' data-aos="fade-down">
+            <div className='one-input end' >
                 <label>Your Message</label>
                 <input type="text" placeholder="Please write your Message here" />
             </div>
-            <div className='button' data-aos="fade-down">
+            <div className='button' >
                <button>Send Message</button> 
             </div>
             

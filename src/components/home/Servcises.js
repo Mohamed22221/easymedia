@@ -19,25 +19,25 @@ const Servcises = ({title}) => {
         <div className='main-servces'>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg}/>
-                <h3>Adertising</h3>
+                <h3>Social media</h3>
                 <p>mohamed lorem loream lorem loream mohamed lorem loreammohamed </p>
                 <button>READ MORE</button>
             </div>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg1}/>
-                <h3>Branding</h3>
+                <h3>Branding design</h3>
                 <p>mohamed lorem loream mohamed lorem loreammohamed lorem loream</p>
                 <button>READ MORE</button>
             </div>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg2}/>
-                <h3>Social Media</h3>
+                <h3>Advertising</h3>
                 <p>mohamed lorem loream mohamed lorem loreammohamed lorem loream</p>
                 <button>READ MORE</button>
             </div>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg3}/>
-                <h3>Creative ideas</h3>
+                <h3>Photography</h3>
                 <p>mohamed lorem loream mohamed lorem loreammohamed lorem loream</p>
                 <button>READ MORE</button>
             </div>
@@ -49,7 +49,7 @@ const Servcises = ({title}) => {
             </div>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg5}/>
-                <h3>Strategy</h3>
+                <h3>E-service</h3>
                 <p>mohamed lorem loream mohamed lorem loreammohamed lorem loream</p>
                 <button>READ MORE</button>
             </div>
