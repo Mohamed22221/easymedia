@@ -36,7 +36,7 @@ const Navbar = () => {
           </li>
           <li>
           <Link onClick={boxHandler} href="#Home"  to="/easymedia#Services" >
-              Servces
+          Services
             </Link>
           </li>
           <li>
