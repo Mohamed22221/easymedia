@@ -13,11 +13,11 @@ const JobId = () => {
     <StyleJopId>
         {DataCarerr.filter((item)=>item.name === PramId ).map((item)=>{
             return (
-            <div className='apout-jop' key={item.id}>
-                <h4>Who are we looking for?</h4>
-               <h1>{item.name}</h1>
-               <p>{item.role}</p>
-               <button>Apply for {item.name} </button>
+            <div className='apout-jop' key={item.id}  >
+                <h4 data-aos="fade-down">Who are we looking for?</h4>
+               <h1 data-aos="fade-down">{item.name}</h1>
+               <p data-aos="fade-up">{item.role}</p>
+               <button data-aos="fade-up">Apply for {item.name} </button>
            </div>    
             )})
         }
@@ -48,6 +48,9 @@ h1{
     padding: 20px 0;
     font-size: 50px;
 }
+p{
+    width: 900px;
+}
 button{
     all: unset;
     color: var(--primary-color);
@@ -63,12 +66,20 @@ button{
      transform:translateY(-10%) ;
     }
 }
+@media (max-width:950px ) {
+    p{
+    width:100%;
+}
+}
 @media (max-width:600px ) {
 top: 10%;
-padding: 40px 0;
+padding: 20px 0;
 h1{
     
     font-size: 26px;
+}
+p{
+    width:100%;
 }
 button{
     font-size:14px

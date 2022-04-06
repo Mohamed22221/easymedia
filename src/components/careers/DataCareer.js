@@ -105,46 +105,7 @@ const DataCarerr = [
 
     ] ,
  },
-//item 6 
-{
-    id:6,
-    name:"UI/UX Designer - Internship",
-    condition:"Internship",
-    Seniority :"Junior",
-    role:"The Social Nuts Student Programs Team is looking for ambitious students to join us as a UI/UX Designer intern, working in one of our core businesses, including interesting internal and external projects , user experience, and internal communications. ",
-    Experience :[
-        {about :"4th and 5th year student."},
-        {about :"Knowledge of Adobe Illustrator, Photoshop, Indesign."},
-        {about :"Excellent verbal and communication skills."},
-        {about :"Keen eye to aesthetics & details."},
 
-
-    ] ,
- },
-//item 7 
-{
-    id:7,
-    name:"Senior UI/UX Designer",
-    condition:"Full Time",
-    Seniority :"Junior",
-    role:"You'll be working in a dynamic and up-beat team of designers and developers. You should also know that each project has some nuts to it only few can handle! So are you up for a challenge? ",
-    Experience :[
-        {about :"Ability to innovate and develop out-of-the-box solutions to complex user interaction problems."},
-        {about :"Ability to lead and direct design thinking for a wide range of products."},
-        {about :"Expert knowledge of UI design principles and techniques"},
-        {about :"Expert knowledge of responsive design and mobile UI"},
-        {about :"Ability to perform in a fast paced, high stress design process under minimal supervision."},
-        {about :"Expert in using the tools of the trade like, XD, Invision."},
-        {about :"Good user research and translating insights from research to designs."},
-        {about :"Flexible, decisive and focus on the needs of the customer"},
-        {about :"Ability to lead large and complex projects"},
-        {about :"Ability to define and prioritize problems to be tackled."},
-        {about :"Outstanding written and verbal communication skills, and ability to present work to executives and large groups."},
-
-
-
-    ] ,
- },
  //item 8 
 {
     id:8,
