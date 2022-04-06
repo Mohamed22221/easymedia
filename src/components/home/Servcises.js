@@ -107,8 +107,9 @@ const ServciesStyle = styled.div`
         padding: 5px 0;
     }
     p{
-        padding: 4px 0;
+        padding: 15px 0;
         color: var(--font);
+
     }
     button{
         all: unset;

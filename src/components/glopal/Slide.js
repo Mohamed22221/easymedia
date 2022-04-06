@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Carousel from "react-elastic-carousel";
-import logo from"../../img/logo.png"
+import clint2 from"../../img/clint2.jpg"
+import clint1 from"../../img/clint1.jpg"
+import clint3 from"../../img/clint3.jpg"
+import clint4 from"../../img/clint4.jpg"
+import clint5 from"../../img/clint5.png"
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -18,14 +22,14 @@ const Slide = () => {
   return (
     <SliderStyle data-aos="fade-down">
      <Carousel breakPoints={breakPoints}>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
-        <div className='item'><img src={logo}/></div>
+        <div className='item'><img src={clint2}/></div>
+        <div className='item'><img src={clint5}/></div>
+        <div className='item'><img src={clint3}/></div>
+        <div className='item'><img src={clint4}/></div>
+        <div className='item'><img src={clint1}/></div>
+        <div className='item'><img src={clint1}/></div>
+        <div className='item'><img src={clint1}/></div>
+        <div className='item'><img src={clint1}/></div>
       </Carousel>
     </SliderStyle>
   )
@@ -39,16 +43,17 @@ padding: 7rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 10px;
   width: 100%;
   background-color: white;
   color: #fff;
   margin: 0 15px;
   font-size: 2em;
- 
+
 
   img{
-    height: 80px;
+    height: 100%;
+    width: 100%;
     opacity: 0.9;
     transition: 0.4s;
     &:hover{

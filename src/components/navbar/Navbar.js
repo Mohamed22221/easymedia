@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav>
          
           <div className="logo">
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia" >
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Home" >
           <img src={logo} />
             </Link>
            
@@ -30,27 +30,27 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia#About" >
+          <Link onClick={boxHandler}  to="/easymedia#About" >
               About us
             </Link>
           </li>
           <li>
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Services" >
+          <Link onClick={boxHandler}  to="/easymedia#Services" >
           Services
             </Link>
           </li>
           <li>
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Contact" >
+          <Link onClick={boxHandler}   to="/easymedia#Contact" >
              Contact
             </Link>
           </li>
           <li>
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Portfolio" >
+          <Link onClick={boxHandler}   to="/easymedia#Portfolio" >
               Portfolio
             </Link>
           </li>
           <li>
-          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Client" >
+          <Link onClick={boxHandler} to="/easymedia#Client" >
              Client
             </Link>
           </li>
