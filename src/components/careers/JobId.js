@@ -3,6 +3,7 @@ import DataCarerr from './DataCareer'
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import pallBackground from"../../img/Moon.svg"
+import Form from './Form';
 
 const JobId = () => {
     const params = useParams() 
@@ -22,6 +23,7 @@ const JobId = () => {
             )})
         }
     </StyleJopId>
+    <Form />
     </StyleMainJopId>  
 
   )
