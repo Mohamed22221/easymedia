@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DataCarerr from './DataCareer';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import {Link} from 'react-router-dom';
 const AccordionCarrer = () => {
   return (
     <AccordionStyle>
@@ -29,9 +30,9 @@ const AccordionCarrer = () => {
                <p>{item.role}</p>
              </div>
              <h3 >Qualifications & Experience</h3>
-          {item.Experience.map((expense)=>{
+          {item.Experience.map((expense ,index)=>{
             return (
-             <div className='Experience' key={expense.id}>
+             <div className='Experience' key={index}>
                
                 <li>
               <HorizontalRuleIcon className='horizintal'/>  {expense.about}
@@ -40,7 +41,7 @@ const AccordionCarrer = () => {
             )
           })}
           <div className='applay'>
-            <button>Apply</button> 
+           <Link to={`/jop/${item.name}`}><button>Apply</button> </Link> 
           </div>
          
 
