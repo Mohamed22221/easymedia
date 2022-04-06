@@ -72,7 +72,7 @@ button{
 }
 }
 @media (max-width:600px ) {
-top: 10%;
+top: 5%;
 padding: 20px 0;
 h1{
     
