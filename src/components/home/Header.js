@@ -41,7 +41,7 @@ const Header = ({title}) => {
         </div>
         <div className='right-header'>
           <h1 data-aos="fade-down">Easy Way</h1>
-          <p data-aos="zoom-in">With easy media everything is too easy .</p>
+          <p data-aos="zoom-in">easier way to find  your superpower.</p>
           <Button title="Know More" />
 
         </div>

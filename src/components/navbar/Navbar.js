@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from "../../img/logo.png"
 import "./Navbar.css";
 
@@ -25,34 +25,34 @@ const Navbar = () => {
         <ul ref={linksContainer} className={toggle ? "active" : ""}>
           <li>
             
-            <Link onClick={boxHandler} href="#Home"  to="/easymedia" >
+            <Link onClick={boxHandler}   to="/easymedia#Home" >
               Home
             </Link>
           </li>
           <li>
-            <a onClick={boxHandler} href='#About' >
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#About" >
               About us
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={boxHandler} href="#Services">
-              Services
-            </a>
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Services" >
+              Servces
+            </Link>
           </li>
           <li>
-            <a onClick={boxHandler}  href="#Contact">
-              Contact
-            </a>
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Contact" >
+             Contact
+            </Link>
           </li>
           <li>
-            <a onClick={boxHandler} href="#Portfolio">
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Portfolio" >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={boxHandler} href="#Client">
-              Client
-            </a>
+          <Link onClick={boxHandler} href="#Home"  to="/easymedia#Client" >
+             Client
+            </Link>
           </li>
           <li>
             

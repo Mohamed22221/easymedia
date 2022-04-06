@@ -10,7 +10,10 @@ const HeaderCareer = () => {
         </div>
             <div className='right-apout'>
             <p>
-            Working in an agency requires adapting to a certain lifestyle not found anywhere else, which made us create a working environment that is fun, friendly, and creative. If Ghaliah seems like the place for you, and you think you have what it takes, this is where you can apply!</p>
+            We’re always looking for great talent. 
+If you know what you’re
+ doing and love doing it, check out our open
+ positions and apply today!</p>
             </div>
         </div>
     </HeaderCarrierStyle>

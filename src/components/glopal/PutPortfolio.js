@@ -7,10 +7,11 @@ const PutPortfolio = ({Filter}) => {
 
     <StyleButoon data-aos="fade-down">
         <button type='button' onClick={()=>Filter('All') } >All</button>
-        <button type='button' onClick={()=>Filter('cv') } >cv</button>
-        <button onClick={()=>Filter('adobe xd') } >Adobe xd</button>
-        <button onClick={()=>Filter('React') } >React</button>
-        <button onClick={()=>Filter('html') } >Html</button>
+        <button type='button' onClick={()=>Filter('cv') } >Software Services</button>
+        <button onClick={()=>Filter('adobe xd') } >Media Production</button>
+        <button onClick={()=>Filter('React') } >Social</button>
+        <button onClick={()=>Filter('html') } >Media</button>
+        <button onClick={()=>Filter('adobe xd') } >Branding</button>
 
     </StyleButoon>
 

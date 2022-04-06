@@ -21,8 +21,7 @@ setMenue(FillterData)
         <SmTitlePage title="Portfolio"/>
         <div className='main-Portfolio'>
           <div className='title-portfolio' data-aos="fade-down">
-          <h5>Selected works</h5>
-          <h1>Our Projects</h1>
+          <h1>Selected works</h1>
           <p>We present to you some of our projects</p>
           </div>
           <PutPortfolio  Filter={Filter} />
@@ -41,7 +40,7 @@ const PortfolioStyle = styled.div`
   padding: 40px 0;
   h1{
     padding: 10px 0;
-    color: var(--primary-color);
+    color: black;
   }
   p{
     width: 490px;

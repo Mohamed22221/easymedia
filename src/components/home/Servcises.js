@@ -15,7 +15,7 @@ import svg5 from "../../img/svg5.svg"
 const Servcises = ({title}) => {
   return (
     <ServciesStyle id='Services'>
-        <SmTitlePage title="Servces" />
+        <SmTitlePage title="Services" />
         <div className='main-servces'>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg}/>
