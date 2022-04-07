@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Form = ({name ,placeholder ,type}) => {
+const Input = ({placeholder , error, type ,Label ,ChangeValue , ...Aloot}) => {
+
   return (
     <StyleMainForm>
-        <lapel>{name}</lapel>
-        <input placeholder={placeholder} type={type}/>
-
-
+        <label>{Label}</label>
+        <input {...Aloot} type={type} placeholder={placeholder}  onChange={ChangeValue}/>
+        <span>{error}</span>
     </StyleMainForm>
   )
 }
@@ -16,21 +16,22 @@ display: flex;
 flex-direction: column;
 padding: 20px;
 position: relative;
-lapel{
+label{
     position: absolute;
     background-color: white;
-    top: 10px;
+    top: 22px;
     left: 18px;
     color: var(--primary-color);
     font-weight: bold;
-
 }
 input{
+  margin: 15px 0;
     border: 1px solid #8b8b8b; ;
-    width:350px;
     padding:20px 30px ;
-
+}
+span{
+  color: red;
 }
 ` 
 
-export default Form
+export default Input

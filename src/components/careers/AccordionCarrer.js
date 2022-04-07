@@ -29,11 +29,10 @@ const AccordionCarrer = () => {
                <h3> Role</h3>
                <p>{item.role}</p>
              </div>
-             <h3 >Qualifications & Experience</h3>
+            <h3 >Qualifications & Experience</h3>
           {item.Experience.map((expense ,index)=>{
             return (
              <div className='Experience' key={index}>
-               
                 <li>
               <HorizontalRuleIcon className='horizintal'/>  {expense.about}
                 </li>
@@ -43,8 +42,6 @@ const AccordionCarrer = () => {
           <div className='applay'>
            <Link to={`/jop/${item.name}`}><button>Apply</button> </Link> 
           </div>
-         
-
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -126,18 +123,19 @@ h3{
 .applay{
  margin: 10px 0;
  background-color: white;
- width: 120px;
+ width: 130px;
  text-align: center;
  transition: 0.8s;
-
+ cursor:pointer;
  &:hover{
       transform: translateY(-8px);
-
+     
     }
+
   button{
    
     all: unset;
-   padding: 10px 0;
+   padding: 10px 40px;
      cursor:pointer;
     color: var(--primary-color);
     font-weight: bold;
