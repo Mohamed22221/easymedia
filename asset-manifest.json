@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/easymedia/static/css/main.986522e7.css",
-    "main.js": "/easymedia/static/js/main.f16e0fa2.js",
+    "main.js": "/easymedia/static/js/main.52f5f46c.js",
     "static/media/animation.mp4": "/easymedia/static/media/animation.f53509470a0889b7381e.mp4",
     "static/media/clint4.jpg": "/easymedia/static/media/clint4.b2bed0be5a6873a05d34.jpg",
     "static/media/01.png": "/easymedia/static/media/01.f3815a3cd764024b30ac.png",
@@ -9,6 +9,7 @@
     "static/media/02.png": "/easymedia/static/media/02.9e89b89f45b0fbb89888.png",
     "static/media/clint3.jpg": "/easymedia/static/media/clint3.59582a813fcaa8faeebb.jpg",
     "static/media/clint1.jpg": "/easymedia/static/media/clint1.0e7e17f15aad7d0bce37.jpg",
+    "static/media/clint6.svg": "/easymedia/static/media/clint6.f64d0b14c76e3affc5d351f91723b285.svg",
     "static/media/clint5.png": "/easymedia/static/media/clint5.bef58a409380c49b3614.png",
     "static/media/team-07.jpg": "/easymedia/static/media/team-07.d6978a99fd889f8b2677.jpg",
     "static/media/team-06.jpg": "/easymedia/static/media/team-06.06a6b7e95e13f4f1c062.jpg",
@@ -28,10 +29,10 @@
     "index.html": "/easymedia/index.html",
     "static/media/Moon.svg": "/easymedia/static/media/Moon.dbf979742e12935946f56376e95f7834.svg",
     "main.986522e7.css.map": "/easymedia/static/css/main.986522e7.css.map",
-    "main.f16e0fa2.js.map": "/easymedia/static/js/main.f16e0fa2.js.map"
+    "main.52f5f46c.js.map": "/easymedia/static/js/main.52f5f46c.js.map"
   },
   "entrypoints": [
     "static/css/main.986522e7.css",
-    "static/js/main.f16e0fa2.js"
+    "static/js/main.52f5f46c.js"
   ]
 }
