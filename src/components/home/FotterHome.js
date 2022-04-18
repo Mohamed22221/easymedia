@@ -10,25 +10,28 @@ const FotterHome = () => {
     <FotterStyle >
         <div className='main-fotter' >
         <div className='item-fotter' data-aos="fade-down">
-            <h2>Lorem</h2>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
+            <h2>location</h2>
+            <p><a href='https://www.google.com/search?q=easymedia.agency&rlz=1C1BNSD_enKW969KW969&sxsrf=APq-WBv-4tg1tdu9mJyJcXGkuuHLnNMfOw:1650241798316&ei=p69cYtibD8nBgQa31Y6wDQ&oq=easy&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIGCCMQJxATMgcILhDUAhBDMgoILhDHARDRAxBDMgoILhDHARDRAxBDMgQIABBDMgQILhBDMgQIABBDMgUIABCABDoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoOCC4QgAQQsQMQxwEQ0QM6DgguEIAEELEDEMcBEKMCOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CwguEIAEELEDENQCOgUILhCABDoKCC4QsQMQ1AIQQzoLCC4QxwEQ0QMQywE6BQgAEMsBOgQIABAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggILhCABBCxAzoFCAAQsQM6CAgAELEDEIMBOggIABCABBCxAzoICC4QgAQQ1AI6CggAELEDEIMBEENKBAhBGABKBAhGGABQ7glYgz5g70ZoC3ABeACAAaMCiAH6GJIBBDItMTKYAQCgAQGwAQrIAQrAAQE&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=2705044429460152125&lqi=ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5&ved=2ahUKEwiznbrhrZz3AhVs_bsIHVOZBnUQvS56BAgREAE&sa=X&rlst=f#rlfi=hd:;si:2705044429460152125,l,ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5;mv:[[29.634084417525198,48.60180323463209],[29.243000675189805,47.90142481666334]]'>Kuwait : Fahad Al-Salem street <span>Al Dawliya Complex Mezzanine, Office #32 Kuwait City, 14000</span> </a></p>
+            <p><a href='https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%AD%D9%85%D8%AF%D8%A7%D9%86+%D8%A8%D9%86+%D8%B1%D8%A7%D8%B4%D8%AF+%D8%A2%D9%84+%D9%85%D9%83%D8%AA%D9%88%D9%85+%D9%84%D9%84%D9%85%D9%88%D9%87%D8%A8%D8%A9+%D9%88%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1%E2%80%AD/@25.2184219,55.2705717,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f425f0f73a993:0x7f54c67bf775f6b3!8m2!3d25.2183939!4d55.2684297'>Dubai : Hamdan Bin Rashid Al Maktoum <span> Center for Giftedness and Innovation - Al Satwa</span>  </a></p>
+            <p><a href='#'>Egypt : ismailia</a></p>
+            
         </div>
         <div className='item-fotter' data-aos="fade-down">
-            <h2>Lorem</h2>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
-            <p><a href='#'>lorem ispam</a></p>
+            <h2>contact</h2>
+            <p><a href='mailto:info@easymedia.agency'>info@easymedia.agency</a></p>
+            <p><a href='tel:+965 2220 9570'>+965 2220 9570</a></p>
+            <p><a href='tel:+965 5537 2333'>+965 5537 2333</a></p>
+
+
+            
+            
         </div>
+
         <div className='item-fotter' data-aos="fade-down">
             <h2>Social media</h2>
-            <a href='#'><FacebookIcon className='icon' /></a>
-            <a href='#'><InstagramIcon className='icon' /></a>
-            <a href='#'><TwitterIcon className='icon' /></a>
-            <a href='#'><LinkedInIcon className='icon'/></a>
+            <a href='https://www.facebook.com/easymedia.agency'><FacebookIcon className='icon' /></a>
+            <a href='https://www.instagram.com/easymedia_agency/'><InstagramIcon className='icon' /></a>
+            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'><LinkedInIcon className='icon'/></a>
         </div>
         </div>
         <div className='copy-right' data-aos="fade-down">
@@ -50,7 +53,8 @@ const FotterStyle = styled.div`
     .main-fotter{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
     @media (max-width:500px) {
         justify-content: center;   
     }
@@ -59,6 +63,9 @@ const FotterStyle = styled.div`
         padding: 15px;
         display: flex;
         flex-direction: column;
+        @media (max-width:500px) {
+        align-items: center;   
+    }
         &:last-child{
             display: block;
             flex-direction: row; 
@@ -74,6 +81,12 @@ const FotterStyle = styled.div`
             color: white;
             opacity: 0.8;
             cursor: pointer;
+            font-size: 15px;
+            @media (max-width:600px) {
+             span{
+                 display: none;
+             }
+             }
         }
         .icon{
             color: white !important;

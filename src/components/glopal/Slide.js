@@ -6,6 +6,7 @@ import clint1 from"../../img/clint1.jpg"
 import clint3 from"../../img/clint3.jpg"
 import clint4 from"../../img/clint4.jpg"
 import clint5 from"../../img/clint5.png"
+import clint6 from"../../img/clint6.svg"
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -26,10 +27,9 @@ const Slide = () => {
         <div className='item'><img src={clint5}/></div>
         <div className='item'><img src={clint3}/></div>
         <div className='item'><img src={clint4}/></div>
+        <div className='item'><img src={clint6}/></div>
         <div className='item'><img src={clint1}/></div>
-        <div className='item'><img src={clint1}/></div>
-        <div className='item'><img src={clint1}/></div>
-        <div className='item'><img src={clint1}/></div>
+
       </Carousel>
     </SliderStyle>
   )
@@ -43,7 +43,7 @@ padding: 7rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10px;
+
   width: 100%;
   background-color: white;
   color: #fff;
@@ -52,13 +52,13 @@ padding: 7rem 4rem;
 
 
   img{
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-    transition: 0.4s;
-    &:hover{
-      opacity: 1;
-    }
+    
+    width: 170px;
+    height:150px ;
+   img:nth-child(6){
+     width: 70px;
+   }
+
   }
 }
 .rec-dot_active {

@@ -17,6 +17,7 @@ const Form = () => {
         Mobile :"",
         Cv:"",
         portfolio:""
+       
 
     })
      // loop inbut
@@ -25,9 +26,12 @@ const Form = () => {
         id:1,
         name:"FirstName",
         placeholder:"Type your first name",
-        type:"text",
+        type:"Text",
         Label:"First Name",
+        required:true,
+        pattern:"^[a-zA-Z]+(-[a-zA-Z]+)*$",
         error:"You must enter your First name at least 3 character and shouldn't include any special character"
+       
      },
      {
         id:2,
@@ -35,6 +39,8 @@ const Form = () => {
         placeholder:"Type your last name",
         type:"text",
         Label:"Last Name",
+        pattern:"^[a-zA-Z]+(-[a-zA-Z]+)*$",
+        required:true,
         error:"You must enter your First name at least 3 character and shouldn't include any special character"
      },
      {
@@ -43,6 +49,7 @@ const Form = () => {
         placeholder:"Type your Email",
         type:"email",
         Label:"Email",
+        required:true,
         error:"Please enter a valid Email Address."
      },
      {
@@ -51,6 +58,8 @@ const Form = () => {
         placeholder:"Type your Number",
         type:"tel",
         Label:"Mobile Number",
+        required:true,
+        pattern:"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" ,
         error:"Please enter a valid Mobile Number."
      },
      {
@@ -58,6 +67,8 @@ const Form = () => {
         name:"Cv",
         placeholder:"Type your cv",
         type:"file",
+        required:true,
+
         Label:"Resume/CV"
      },
      {
@@ -66,7 +77,8 @@ const Form = () => {
         placeholder:"But your Bortfolio",
         type:"text",
         Label:"portfolio website",
-        error:"Please enter a valid Mobile Number."
+        required:true,
+        error:"Please enter your Bortfolio"
      }
     ] 
     // take value onchange inbut

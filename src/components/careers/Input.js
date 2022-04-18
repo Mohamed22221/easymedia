@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const Input = ({placeholder , error, type ,Label ,ChangeValue , ...Aloot}) => {
-
+const [Foucs , setFouce] =useState(false)
+const HandellFoucs = () =>{
+  setFouce(true)
+}
   return (
     <StyleMainForm>
         <label>{Label}</label>
-        <input {...Aloot} type={type} placeholder={placeholder}  onChange={ChangeValue}/>
+        <input {...Aloot} type={type} placeholder={placeholder} 
+         required  onChange={ChangeValue} onBlur={HandellFoucs} Foucs={Foucs.toString()}/>
         <span>{error}</span>
     </StyleMainForm>
   )
@@ -29,9 +33,14 @@ input{
     border: 1px solid #8b8b8b; ;
     padding:20px 30px ;
 }
+input:invalid[Foucs="true"] ~ span{
+  display: block;
+}
 span{
   color: red;
+  display: none;
 }
+
 ` 
 
 export default Input

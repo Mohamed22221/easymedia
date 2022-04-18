@@ -8,7 +8,8 @@ const ClientHome = () => {
     <ClientStyle id='Client'>
         <SmTitlePage title="Clients"/>
         <div className='paragraph'>
-            <p data-aos="fade-right">lorem lorem loreml orem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+            <p data-aos="fade-right">From 2020 tell now we Has been learning and innovation for Easy Media , We Have been Working on
+ Recruiting Greater Team Mates & Executing Bigger Projects Building a name for Affordable And Reliable Services</p>
         </div>
         <Slide/>
     </ClientStyle>
@@ -19,8 +20,14 @@ const ClientStyle = styled.div`
  padding:0 4rem;
  color: #545454;
  font-size: 14px;
+ width: 50%;
  @media (max-width:500px) {
     padding:0 2rem; 
+
+ }
+ @media (max-width:1100px) {
+    
+    width: 100%;
  }
  
 }

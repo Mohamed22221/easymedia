@@ -20,6 +20,10 @@ const ContactHome = () => {
                 <label>Your E-mail</label>
                 <input type="text" placeholder="Please write your email here" />
             </div>
+            <div className='one-input' >
+                <label>Your Phone</label>
+                <input type="text" placeholder="Please write your number here" />
+            </div>
             <div className='one-input end' >
                 <label>Your Message</label>
                 <input type="text" placeholder="Please write your Message here" />
