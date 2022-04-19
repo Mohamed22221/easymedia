@@ -1,13 +1,15 @@
 
 import { Container } from '@mui/material'
 import emailjs from 'emailjs-com';
-import React, { useRef, useState } from 'react'
+import React, {  useState } from 'react'
 import styled from 'styled-components'
 import Input from './Input'
 
 
 
+
 const Form = ({jops}) => {
+    const [value, setValue] = useState()
 
      // take values onchange inbut
     const [Values , setValues] = useState({
@@ -16,7 +18,7 @@ const Form = ({jops}) => {
         Email :"",
         Mobile :"",
         portfolio:""
-       
+        
 
     })
      // loop inbut
@@ -58,8 +60,9 @@ const Form = ({jops}) => {
         type:"tel",
         Label:"Mobile Number",
         required:true,
-        pattern:"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" ,
-        error:"Please enter a valid Mobile Number."
+        pattern:"^([0|\+[0-9]{1,5})?([0-9]{10})$" ,
+        error:"Please write the international code before the number like this (+20126798122)" ,
+        
      },
      {
         id:5,
@@ -82,6 +85,7 @@ const Form = ({jops}) => {
     // take value onchange inbut
     const HandellSupmit = (e)=>{
         e.preventDefault()
+        //send mail
         emailjs.sendForm("service_64nbnzd" ,"template_kh79ldg" , e.target ,"_gMMwNlImuaHyLxGu")
         .then((response) => {
             console.log(response);
@@ -106,6 +110,7 @@ const Form = ({jops}) => {
            {inputs.map((item)=>{
                 return (
                <Input key={item.id} {...item} value={Values[item.name]} ChangeValue={ChangeValue}  />
+               
                 )
            })}
         </div>  
