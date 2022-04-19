@@ -1,13 +1,13 @@
 
 import { Container } from '@mui/material'
-import { axios } from 'axios'
+import emailjs from 'emailjs-com';
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 import Input from './Input'
 
 
 
-const Form = () => {
+const Form = ({jops}) => {
 
      // take values onchange inbut
     const [Values , setValues] = useState({
@@ -15,7 +15,6 @@ const Form = () => {
         LastName : "",
         Email :"",
         Mobile :"",
-        Cv:"",
         portfolio:""
        
 
@@ -31,7 +30,7 @@ const Form = () => {
         required:true,
         pattern:"^[a-zA-Z]+(-[a-zA-Z]+)*$",
         error:"You must enter your First name at least 3 character and shouldn't include any special character"
-       
+        
      },
      {
         id:2,
@@ -64,12 +63,11 @@ const Form = () => {
      },
      {
         id:5,
-        name:"Cv",
-        placeholder:"Type your cv",
-        type:"file",
+        name:"JobTitle",
+        placeholder:"Type your job title",
+        type:"text",
         required:true,
-
-        Label:"Resume/CV"
+        Label:"Job Title"
      },
      {
         id:6,
@@ -84,6 +82,13 @@ const Form = () => {
     // take value onchange inbut
     const HandellSupmit = (e)=>{
         e.preventDefault()
+        emailjs.sendForm("service_64nbnzd" ,"template_kh79ldg" , e.target ,"_gMMwNlImuaHyLxGu")
+        .then((response) => {
+            console.log(response);
+         }, (err) => {
+            console.log('FAILED...', err);
+         });
+         
     }
     const ChangeValue = (e)=>{
         setValues({...Values , [e.target.name] : e.target.value})
@@ -100,7 +105,7 @@ const Form = () => {
        <div className='flex-input'>
            {inputs.map((item)=>{
                 return (
-               <Input key={item.id} {...item} value={Values[item.name]} ChangeValue={ChangeValue} />
+               <Input key={item.id} {...item} value={Values[item.name]} ChangeValue={ChangeValue}  />
                 )
            })}
         </div>  

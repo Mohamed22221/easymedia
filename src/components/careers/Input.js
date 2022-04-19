@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-const Input = ({placeholder , error, type ,Label ,ChangeValue , ...Aloot}) => {
+const Input = ({placeholder , error, type ,Label ,ChangeValue , name , ...Aloot}) => {
 const [Foucs , setFouce] =useState(false)
 const HandellFoucs = () =>{
   setFouce(true)
@@ -9,7 +9,7 @@ const HandellFoucs = () =>{
   return (
     <StyleMainForm>
         <label>{Label}</label>
-        <input {...Aloot} type={type} placeholder={placeholder} 
+        <input {...Aloot} type={type} placeholder={placeholder} name={name}
          required  onChange={ChangeValue} onBlur={HandellFoucs} Foucs={Foucs.toString()}/>
         <span>{error}</span>
     </StyleMainForm>
@@ -34,6 +34,10 @@ input{
     padding:20px 30px ;
 }
 input:invalid[Foucs="true"] ~ span{
+  border-color:red !important ;
+}
+input:invalid[Foucs="true"] ~ span{
+  border-color:red ;
   display: block;
 }
 span{

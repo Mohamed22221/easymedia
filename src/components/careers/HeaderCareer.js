@@ -11,9 +11,9 @@ const HeaderCareer = () => {
             <div className='right-apout'>
             <p>
             We’re always looking for great talent. 
-If you know what you’re
- doing and love doing it, check out our open
- positions and apply today!</p>
+            If you know what you’re
+            doing and love doing it, check out our open
+            positions and apply today!</p>
             </div>
         </div>
     </HeaderCarrierStyle>

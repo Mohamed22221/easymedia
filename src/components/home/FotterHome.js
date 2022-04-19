@@ -21,8 +21,6 @@ const FotterHome = () => {
             <p><a href='mailto:info@easymedia.agency'>info@easymedia.agency</a></p>
             <p><a href='tel:+965 2220 9570'>+965 2220 9570</a></p>
             <p><a href='tel:+965 5537 2333'>+965 5537 2333</a></p>
-
-
             
             
         </div>

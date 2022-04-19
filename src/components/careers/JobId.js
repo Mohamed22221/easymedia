@@ -23,7 +23,7 @@ const JobId = () => {
             )})
         }
     </StyleJopId>
-    <Form />
+    <Form  />
     </StyleMainJopId>  
 
   )
