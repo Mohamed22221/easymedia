@@ -60,9 +60,9 @@ padding: 4rem;
   flex-direction:column;
   height: 80vh;
 }
-@media (max-width:350px) {
+@media (max-width:376px) {
   flex-direction:column;
-  height: 100vh;
+  height: 110vh;
 }
 .left-apout{
   width: 50%;
@@ -101,8 +101,8 @@ font-size: 13px;
 @media (max-width:550px) {
   top: 480px;
 } 
-@media (max-width:375px) {
-  top: 550px;
+@media (max-width:376px) {
+  top: 585px;
   width: 120px;
 }   
   img{
