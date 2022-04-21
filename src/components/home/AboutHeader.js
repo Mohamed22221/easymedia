@@ -44,6 +44,7 @@ that stop them from reaching their potential. </p>
 }
 const AboutHeaderStyle =styled.div`
 position: relative;
+height: 100%;
 
 .main-apoutmedia{
 display: flex;
@@ -59,18 +60,28 @@ padding: 4rem;
   flex-direction:column;
   height: 80vh;
 }
+@media (max-width:350px) {
+  flex-direction:column;
+  height: 100vh;
+}
 .left-apout{
   width: 50%;
   line-height: 28px;
   color: var(--font);
+
 @media (max-width:550px) {
   width:100%
+
+}  
+@media (max-width:370px) {
+font-size: 13px;
+
 }  
 }
 .right-apout{
   position: absolute;
   right: 4rem;
-  top: 0;
+  bottom:  0;
   z-index: 1;
   align-items: flex-start;
   -webkit-animation-name: MoveUpDownLeft;
@@ -86,14 +97,19 @@ padding: 4rem;
     -moz-animation-direction: alternate;
     animation-direction: alternate;
     animation-timing-function: linear;
+    
 @media (max-width:550px) {
   top: 480px;
+} 
+@media (max-width:375px) {
+  top: 550px;
+  width: 120px;
 }   
   img{
     width: 250px;
     
 @media (max-width:550px) {
- width: 150px;
+ width: 130px;
 }   
 
   }
