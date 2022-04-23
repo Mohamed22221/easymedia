@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import superimg from "../../img/01.png"
 import animateimg from "../../img/flat1.png"
+import dream from "../../img/dream.jpg"
+
 import animateimg1 from "../../img/flat2.png"
 import Button from '../glopal/Button'
 import { Container } from '@mui/material';
@@ -56,6 +58,21 @@ margin: 0;
 padding: 0;
 position: relative;
 overflow: hidden;
+&::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: url(${dream});
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+      opacity: 0.1;
+      
+    }
+
 @media (max-width:763px) {
      width: 100%;
      height: 100vh;
@@ -64,15 +81,20 @@ svg{
     background-size: cover;
     top: 0;
     width: 101%;
+    position: relative;
+    
+   
+
+
 }
 .content-header{
   
   display: flex;
   bottom:  0;
-  z-index: 1;
   .left-header{
     .super-img {
       position: absolute;
+      z-index: 2;
       top: 30%;
       left: 0;
       transform: translateY(-30%);
@@ -123,6 +145,7 @@ svg{
       position: absolute;
       top: 30%;
       left:590px;
+      z-index: 2;
       @media (max-width:1516px) {
         left:290px;
       }
@@ -136,7 +159,7 @@ svg{
           z-index: -1;
           -webkit-animation: Rotate 9s linear infinite;
           animation: Rotate 9s linear infinite;
-
+          z-index: 2;
       }
       
     }
@@ -144,10 +167,11 @@ svg{
       position: absolute;
       top: 30%;
       left:190px;
+      
       @media (max-width:763px) { 
       top:40%  ;
       left:20px ;
-  
+        
       }
       .animateimg1{
           width: 190px;
@@ -164,6 +188,7 @@ svg{
     transform: translateY(-30%);
     top: 30%;
     color: white;
+    z-index: 2;
     @media (max-width:1216px) {
       top:35%
       
