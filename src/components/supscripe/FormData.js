@@ -96,7 +96,7 @@ p{
     font-size: 15px;
     font-weight: 600;
     @media (max-width:490px) {
-      width: 250px;
+      width: 280px;
   }
   }
 .switch{
