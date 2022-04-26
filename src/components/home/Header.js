@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import superimg from "../../img/01.png"
 import animateimg from "../../img/flat1.png"
 import dream from "../../img/dream.jpg"
-
 import animateimg1 from "../../img/flat2.png"
 import Button from '../glopal/Button'
 import { Container } from '@mui/material';

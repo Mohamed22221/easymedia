@@ -8,7 +8,7 @@ import Input from './Input'
 
 
 
-const Form = ({jops}) => {
+const Form = () => {
     const [value, setValue] = useState()
 
      // take values onchange inbut
@@ -18,8 +18,6 @@ const Form = ({jops}) => {
         Email :"",
         Mobile :"",
         portfolio:""
-        
-
     })
      // loop inbut
     const inputs = [
