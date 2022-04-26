@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/easymedia/static/css/main.986522e7.css",
-    "main.js": "/easymedia/static/js/main.cfc719cf.js",
+    "main.js": "/easymedia/static/js/main.145ca337.js",
     "static/media/animation.mp4": "/easymedia/static/media/animation.f53509470a0889b7381e.mp4",
     "static/media/clint4.jpg": "/easymedia/static/media/clint4.b2bed0be5a6873a05d34.jpg",
     "static/media/01.png": "/easymedia/static/media/01.f3815a3cd764024b30ac.png",
@@ -27,13 +27,14 @@
     "static/media/svg5.svg": "/easymedia/static/media/svg5.dccf393073e9b2dc8a49de9cf0b645d6.svg",
     "static/media/svg4.svg": "/easymedia/static/media/svg4.d74759ff67217a53f5d2a593bdc8e99e.svg",
     "static/media/svg3.svg": "/easymedia/static/media/svg3.e95819c280592bc9e8863567defe4c6e.svg",
+    "static/media/supscripe.svg": "/easymedia/static/media/supscripe.707ed72ae6e936d0f140d906d652524f.svg",
     "static/media/Moon.svg": "/easymedia/static/media/Moon.dbf979742e12935946f56376e95f7834.svg",
     "index.html": "/easymedia/index.html",
     "main.986522e7.css.map": "/easymedia/static/css/main.986522e7.css.map",
-    "main.cfc719cf.js.map": "/easymedia/static/js/main.cfc719cf.js.map"
+    "main.145ca337.js.map": "/easymedia/static/js/main.145ca337.js.map"
   },
   "entrypoints": [
     "static/css/main.986522e7.css",
-    "static/js/main.cfc719cf.js"
+    "static/js/main.145ca337.js"
   ]
 }
