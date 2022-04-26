@@ -1,44 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
-import contactsvg from"../../img/cvgcontact.svg"
+import contactsvg from "../../img/cvgcontact.svg"
 import PigTitlePage from '../glopal/PigTitlePage'
 const ContactHome = () => {
-  return (
-    <ContactStyle id='Contact' >
-               
-        <div className='img' >
-        <PigTitlePage title="Contact"
-            h1="white"
-            spanprimary="white"
-            />
-         <form >
-            <div className='one-input' >
-                <label>Your Name</label>
-                <input type="text" placeholder="Please write your name here" />
-            </div>
-            <div className='one-input' >
-                <label>Your E-mail</label>
-                <input type="text" placeholder="Please write your email here" />
-            </div>
-            <div className='one-input' >
-                <label>Your Phone</label>
-                <input type="text" placeholder="Please write your number here" />
-            </div>
-            <div className='one-input end' >
-                <label>Your Message</label>
-                <input type="text" placeholder="Please write your Message here" />
-            </div>
-            <div className='button' >
-               <button>Send Message</button> 
-            </div>
-            
-         </form>   
-        </div>
- 
+    return (
+        <ContactStyle id='Contact' >
 
-    
-    </ContactStyle>
-  )
+            <div className='img' >
+                <PigTitlePage title="Contact"
+                    h1="white"
+                    spanprimary="white"
+                />
+                <form >
+                    <div className='one-input' >
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Please write your name here" />
+                    </div>
+                    <div className='one-input' >
+                        <label>Your E-mail</label>
+                        <input type="text" placeholder="Please write your email here" />
+                    </div>
+                    <div className='one-input' >
+                        <label>Your Phone</label>
+                        <input type="text" placeholder="Please write your number here" />
+                    </div>
+                    <div className='one-input end' >
+                        <label>Your Message</label>
+                        <input type="text" placeholder="Please write your Message here" />
+                    </div>
+                    <div className='button' >
+                        <button>Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+
+
+        </ContactStyle>
+    )
 }
 const ContactStyle = styled.div`
  overflow: hidden;

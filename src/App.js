@@ -3,6 +3,7 @@ import JobId from "./components/careers/JobId";
 import Navbar from './components/navbar/Navbar';
 import Carrier from "./pages/Carrier";
 import Home from './pages/Home';
+import Supscripe from "./pages/Supscripe";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="easymedia" element={<Home/>} />
         <Route path="/Careers" element={<Carrier/>} />
+        <Route path="/supscripe" element={<Supscripe/>} />
         <Route path="/jop" element={<JobId/>} >
         <Route path=":jopId" element={<JobId/>} />
         </Route>

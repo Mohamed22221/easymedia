@@ -17,16 +17,16 @@ const AboutHeader = () => {
       <div className='main-apoutmedia'>
         <div className='left-apout'>
         <p data-aos="fade-right">Easy Media is a Marketing Company based in 
-Kuwait. In today’s day and age, marketing is very in-
-tegral to any company that aims for success. Our 
-Job is to assist the companies in their marketing 
-journey, making it fruitful and successful. Our 
-target market is very much dependent on our cli-
-ents, target market, as we shape each and every 
-plan carefully for our clients, needs to best serve 
-their interests. We enable our clients to reach 
-their goals by removing the barriers in their way 
-that stop them from reaching their potential. </p>
+        Kuwait. In today’s day and age, marketing is very in-
+        tegral to any company that aims for success. Our 
+        Job is to assist the companies in their marketing 
+        journey, making it fruitful and successful. Our 
+        target market is very much dependent on our cli-
+        ents, target market, as we shape each and every 
+        plan carefully for our clients, needs to best serve 
+        their interests. We enable our clients to reach 
+        their goals by removing the barriers in their way 
+        that stop them from reaching their potential. </p>
         </div>
         <div className='right-apout'>
           <img src={apoutimg} data-aos="fade-down" />

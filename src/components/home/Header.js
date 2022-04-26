@@ -82,10 +82,6 @@ svg{
     top: 0;
     width: 101%;
     position: relative;
-    
-   
-
-
 }
 .content-header{
   
