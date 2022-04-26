@@ -20,6 +20,7 @@ overflow-y: auto;
 border-radius: 10px;
 h4{
     text-align: center;
+    
 }
 @media (max-width:1100px) {
   padding: 1rem 2.5rem;
@@ -31,7 +32,6 @@ h4{
 
   height: 70vh;
 }
-
 
 
 `

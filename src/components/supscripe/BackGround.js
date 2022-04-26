@@ -15,9 +15,6 @@ right: 0;
 left: 0;
 z-index: 0;
 }
-@media (max-width:500px ) {
-   
-    
-}
+
 `
 export default BackGround

@@ -60,6 +60,12 @@ const Navbar = () => {
             Careers
             </Link>
           </li>
+          <li>
+            
+            <Link onClick={boxHandler}  to="/subscribe" >
+            Subscribe
+            </Link>
+          </li>
           
   
         </ul>
