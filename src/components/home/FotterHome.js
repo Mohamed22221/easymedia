@@ -1,18 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import CopyrightIcon from '@mui/icons-material/Copyright';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import wats from "../../img/wats.png"
+import face from "../../img/face.png"
+import linked from "../../img/linked.png"
+import insta from "../../img/insta.png"
+
+
+
 const FotterHome = () => {
   return (
     <FotterStyle >
         <div className='main-fotter' >
         <div className='item-fotter' >
             <h2>location</h2>
-            <p><a href='https://www.google.com/search?q=easymedia.agency&rlz=1C1BNSD_enKW969KW969&sxsrf=APq-WBv-4tg1tdu9mJyJcXGkuuHLnNMfOw:1650241798316&ei=p69cYtibD8nBgQa31Y6wDQ&oq=easy&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIGCCMQJxATMgcILhDUAhBDMgoILhDHARDRAxBDMgoILhDHARDRAxBDMgQIABBDMgQILhBDMgQIABBDMgUIABCABDoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoOCC4QgAQQsQMQxwEQ0QM6DgguEIAEELEDEMcBEKMCOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CwguEIAEELEDENQCOgUILhCABDoKCC4QsQMQ1AIQQzoLCC4QxwEQ0QMQywE6BQgAEMsBOgQIABAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggILhCABBCxAzoFCAAQsQM6CAgAELEDEIMBOggIABCABBCxAzoICC4QgAQQ1AI6CggAELEDEIMBEENKBAhBGABKBAhGGABQ7glYgz5g70ZoC3ABeACAAaMCiAH6GJIBBDItMTKYAQCgAQGwAQrIAQrAAQE&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=2705044429460152125&lqi=ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5&ved=2ahUKEwiznbrhrZz3AhVs_bsIHVOZBnUQvS56BAgREAE&sa=X&rlst=f#rlfi=hd:;si:2705044429460152125,l,ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5;mv:[[29.634084417525198,48.60180323463209],[29.243000675189805,47.90142481666334]]' target="_blank">Kuwait : Fahad Al-Salem street <span>Al Dawliya Complex Mezzanine, Office #32 Kuwait City, 14000</span> </a></p>
-            <p><a href='https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%AD%D9%85%D8%AF%D8%A7%D9%86+%D8%A8%D9%86+%D8%B1%D8%A7%D8%B4%D8%AF+%D8%A2%D9%84+%D9%85%D9%83%D8%AA%D9%88%D9%85+%D9%84%D9%84%D9%85%D9%88%D9%87%D8%A8%D8%A9+%D9%88%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1%E2%80%AD/@25.2184219,55.2705717,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f425f0f73a993:0x7f54c67bf775f6b3!8m2!3d25.2183939!4d55.2684297' target="_blank">Dubai : Hamdan Bin Rashid Al Maktoum <span> Center for Giftedness and Innovation - Al Satwa</span>  </a></p>
+            <p><a href='https://www.google.com/search?q=easymedia.agency&rlz=1C1BNSD_enKW969KW969&sxsrf=APq-WBv-4tg1tdu9mJyJcXGkuuHLnNMfOw:1650241798316&ei=p69cYtibD8nBgQa31Y6wDQ&oq=easy&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIGCCMQJxATMgcILhDUAhBDMgoILhDHARDRAxBDMgoILhDHARDRAxBDMgQIABBDMgQILhBDMgQIABBDMgUIABCABDoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoOCC4QgAQQsQMQxwEQ0QM6DgguEIAEELEDEMcBEKMCOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CwguEIAEELEDENQCOgUILhCABDoKCC4QsQMQ1AIQQzoLCC4QxwEQ0QMQywE6BQgAEMsBOgQIABAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggILhCABBCxAzoFCAAQsQM6CAgAELEDEIMBOggIABCABBCxAzoICC4QgAQQ1AI6CggAELEDEIMBEENKBAhBGABKBAhGGABQ7glYgz5g70ZoC3ABeACAAaMCiAH6GJIBBDItMTKYAQCgAQGwAQrIAQrAAQE&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=2705044429460152125&lqi=ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5&ved=2ahUKEwiznbrhrZz3AhVs_bsIHVOZBnUQvS56BAgREAE&sa=X&rlst=f#rlfi=hd:;si:2705044429460152125,l,ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5;mv:[[29.634084417525198,48.60180323463209],[29.243000675189805,47.90142481666334]]' target="_blank">Kuwait : Fahad Al-Salem street <span></span> </a></p>
+            <p><a href='https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%AD%D9%85%D8%AF%D8%A7%D9%86+%D8%A8%D9%86+%D8%B1%D8%A7%D8%B4%D8%AF+%D8%A2%D9%84+%D9%85%D9%83%D8%AA%D9%88%D9%85+%D9%84%D9%84%D9%85%D9%88%D9%87%D8%A8%D8%A9+%D9%88%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1%E2%80%AD/@25.2184219,55.2705717,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f425f0f73a993:0x7f54c67bf775f6b3!8m2!3d25.2183939!4d55.2684297' target="_blank">Dubai : Hamdan Bin Rashid Al Maktoum <span> </span>  </a></p>
             <p><a href='#'>Egypt : ismailia</a></p>
             
         </div>
@@ -27,9 +30,11 @@ const FotterHome = () => {
 
         <div className='item-fotter' >
             <h2>Social media</h2>
-            <a href='https://www.facebook.com/easymedia.agency' target="_blank"><FacebookIcon className='icon' /></a>
-            <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><InstagramIcon className='icon' /></a>
-            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><LinkedInIcon className='icon'/></a>
+            <a href='https://www.facebook.com/easymedia.agency' target="_blank"><img src={face} /></a>
+            <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><img src={insta} /></a>
+            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><img src={linked} /></a>
+            <a href='https://wa.me/0096562220286'  target="_blank"><img src={wats} /></a>
+
         </div>
         </div>
         <div className='copy-right' >
@@ -85,14 +90,15 @@ const FotterStyle = styled.div`
                  display: none;
              }
              }
+             img{
+                 width: 30px;
+                 margin:0 11px;
+                 filter: grayscale(20%) contrast(100%);
+                
+
+             }
         }
-        .icon{
-            color: white !important;
-            opacity: 1 !important;
-            margin: 10px;
-            font-size: 29px;
-            
-        }
+
     }
     }
     .copy-right{
