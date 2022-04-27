@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import LinkIcon from '@mui/icons-material/Link';
 const FilterData = ({menueItems}) => {
     const DataFilter = menueItems.map((item)=>{
         return (
@@ -10,10 +11,8 @@ const FilterData = ({menueItems}) => {
                <div className='apout'>
                <h2 className="card-title">{item.name}</h2>
                <p>{item.discription}</p>
-               <a>{item.icon}</a>
+               <a href={item.link} target="_blank"><LinkIcon className="LinkIcon" /></a>
                </div>
-
-
             </div>
 
             )
@@ -37,11 +36,7 @@ const StyleFilter = styled.div`
           transform:scale(1.1) ;
           overflow: hidden;
         }
-        &:hover h2{
-          transform:scale(1.2) ;
-          color: white;
-          
-        }
+
     
     }
     margin: 0 auto;
@@ -49,6 +44,7 @@ const StyleFilter = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+    
   gap: 30px;
 @media (max-width:500px) {
     padding:3rem 2.5rem;
@@ -63,7 +59,7 @@ const StyleFilter = styled.div`
         height: 245px;
         border: 0px solid;
         border-radius: 7px;
-        
+        padding: 60px 30px 30px;
 
     }
 }
@@ -78,27 +74,45 @@ const StyleFilter = styled.div`
  padding: 147px 0 0 0;
  text-align: center;
  transition:all 0.5s;
+ 
  cursor: pointer;
+padding: 0px 0;
+box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
+-webkit-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
+-moz-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
+  border-radius: 10px;
  h2{
     transition: 0.5s;
-    font-weight: 300px;
-     font-size: 30px;
-     color: var(--primary-color);
+    color: white;
+     font-size: 20px;
+     
+     padding: 10px;
+     background-color: var(--primary-color);
+     
  }
-p{
-   
-    opacity: 0.7;
+p , a{
+  opacity: 0;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 22px;
+}
+a{
+  width: 80px;
+  .LinkIcon{
+    font-size: 50px;
+    color:white
+  }
 }
  &:hover{
-    background-color :#e5351663 ;
-    padding: 80px 0 0 0;
-    color: white;
-
- }
- 
+    background-color :#cb1e0087 ;
+    p , a{
+  opacity: 1;
+  transform: translateY(70px);
+  }
+  
 }
 
-
+}
 }
 
 `
