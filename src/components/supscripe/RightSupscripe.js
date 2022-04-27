@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import superimg from "../../img/01.png"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import dream from "../../img/dream.jpg"
 const RightSupscripe = () => {
   return (
@@ -10,7 +11,7 @@ const RightSupscripe = () => {
       <h4>Please enter the correct information to subscribe</h4>
       <div className='supscripe-now'>
       <h2>Subscribe Now</h2>
-      <span> <ArrowForwardIcon className='supscripe-icon' /></span>
+      <span> <ArrowForwardIcon className='supscripe-icon' /><ArrowDownwardIcon className='supscripe-icon-2' /></span>
       </div>
       </div>
       <div>
@@ -65,7 +66,18 @@ img{
   justify-content: center;
 }
 .supscripe-icon{
-  margin-top: 9px;
+  margin-top: 3px;
+  display: block;
+  @media (max-width:1000px ) {
+    display: none;
+  }
+}
+.supscripe-icon-2{
+  margin-top: 3px;
+  display: none;
+  @media (max-width:1000px ) {
+    display: block;
+  }
 }
 `
 export default RightSupscripe

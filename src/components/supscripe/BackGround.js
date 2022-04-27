@@ -9,14 +9,15 @@ const BackGround = () => {
 }
 const StyleBackGround = styled.div`
 position: relative;
-
+width: 100%;
 img{
 position: fixed;
 left: 0;
 top: 0;
 z-index: 0;
-transform: rotate(180deg);
+background-position: center center;
 height: 100vh;
+background-size: contain;
 }
 
 `

@@ -16,6 +16,7 @@ const FormSubscripe = () => {
 }
 const StyleForm= styled.div`
 display: flex;
+
 position: relative;
 z-index: 1;
 background-color: white;
@@ -45,7 +46,7 @@ overflow: hidden;
 const StyleRightSupscripe= styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 width: 50%;
 @media (max-width:1000px) {

@@ -5,6 +5,7 @@ const GlopalStyle = createGlobalStyle`
     --primary-color-obacity: rgb(153 5 190 / 10%);
     --background-dark-color: #3c3d4a;
     --font: #303030;
+    --font-two:#cbcbcb;
     --white-color: #FFF;
 } 
 *{
