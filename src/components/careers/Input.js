@@ -14,7 +14,6 @@ const HandellFoucs = () =>{
          name={name} required  onChange={ChangeValue} 
          onBlur={HandellFoucs} Foucs={Foucs.toString()}
          />
-         
         <span>{error}</span>
     </StyleMainForm>
   )

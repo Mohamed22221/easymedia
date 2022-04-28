@@ -4,13 +4,14 @@ import emailjs from 'emailjs-com';
 import React, {  useState } from 'react'
 import styled from 'styled-components'
 import Input from './Input'
+import {  useToasts } from 'react-toast-notifications'
 
 
 
 
-const Form = () => {
-    const [value, setValue] = useState()
-
+const Form = ({content }) => {
+    
+    const { addToast } = useToasts();
      // take values onchange inbut
     const [Values , setValues] = useState({
         FirstName : "" ,
@@ -87,18 +88,23 @@ const Form = () => {
         emailjs.sendForm("service_64nbnzd" ,"template_kh79ldg" , e.target ,"_gMMwNlImuaHyLxGu")
         .then((response) => {
             console.log(response);
+            addToast('Send Successfully', { appearance: 'success' }  );
          }, (err) => {
             console.log('FAILED...', err);
          });
          
+         setValues(e.target.value = "")
     }
     const ChangeValue = (e)=>{
-        setValues({...Values , [e.target.name] : e.target.value})
+         setValues({...Values , [e.target.name] : e.target.value})
+         
+         
     }
    console.log(Values)
   return (
     <StyleMainForm>
         <Container maxWidth="lg">
+       
             <div className='apout'>
                 <h1>Welcome</h1>
                 <p>We’re always looking for great talent. If you know what you’re doing and love doing it, check out our open positions and apply today!</p>
@@ -116,6 +122,7 @@ const Form = () => {
           <button onClick={ChangeValue}>Join Now</button>    
         </div>
         </StyleForm>
+        
         </Container>
     </StyleMainForm>
   )
