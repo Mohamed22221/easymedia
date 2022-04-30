@@ -6,9 +6,6 @@ import styled from 'styled-components'
 import Input from './Input'
 import {  useToasts } from 'react-toast-notifications'
 
-
-
-
 const Form = ({content }) => {
     
     const { addToast } = useToasts();
