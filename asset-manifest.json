@@ -1,16 +1,21 @@
 {
   "files": {
     "main.css": "/easymedia/static/css/main.986522e7.css",
-    "main.js": "/easymedia/static/js/main.c142d39a.js",
+    "main.js": "/easymedia/static/js/main.815253d6.js",
     "static/media/animation.mp4": "/easymedia/static/media/animation.f53509470a0889b7381e.mp4",
     "static/media/clint4.jpg": "/easymedia/static/media/clint4.b2bed0be5a6873a05d34.jpg",
     "static/media/01.png": "/easymedia/static/media/01.f3815a3cd764024b30ac.png",
     "static/media/clint2.jpg": "/easymedia/static/media/clint2.2b884c9c650ea908d80c.jpg",
     "static/media/02.png": "/easymedia/static/media/02.9e89b89f45b0fbb89888.png",
     "static/media/clint3.jpg": "/easymedia/static/media/clint3.59582a813fcaa8faeebb.jpg",
+    "static/media/social-03.jpeg": "/easymedia/static/media/social-03.d2bcd6691e9349ff1831.jpeg",
+    "static/media/social-02.jpeg": "/easymedia/static/media/social-02.96273e837dab4ac8cfd1.jpeg",
     "static/media/dream.jpg": "/easymedia/static/media/dream.772819402a05884005fe.jpg",
+    "static/media/social-01.jpeg": "/easymedia/static/media/social-01.1f4d41330ce360d46dba.jpeg",
     "static/media/clint1.jpg": "/easymedia/static/media/clint1.8f30fc70259e7400fc32.jpg",
     "static/media/clint6.svg": "/easymedia/static/media/clint6.f64d0b14c76e3affc5d351f91723b285.svg",
+    "static/media/social-05.jpeg": "/easymedia/static/media/social-05.66d4d125f615ad66aa5b.jpeg",
+    "static/media/social-04.jpeg": "/easymedia/static/media/social-04.ad7dfdbbdb938e8a1c53.jpeg",
     "static/media/team-05.jpg": "/easymedia/static/media/team-05.7b25352498ba4b5f790f.jpg",
     "static/media/clint5.png": "/easymedia/static/media/clint5.bef58a409380c49b3614.png",
     "static/media/team-01.jpg": "/easymedia/static/media/team-01.a5f72d44038bce61080c.jpg",
@@ -27,10 +32,10 @@
     "static/media/Moon.svg": "/easymedia/static/media/Moon.dbf979742e12935946f56376e95f7834.svg",
     "static/media/supscripe.svg": "/easymedia/static/media/supscripe.3bd08699f3f08a2dcedf2e66dc39a41f.svg",
     "main.986522e7.css.map": "/easymedia/static/css/main.986522e7.css.map",
-    "main.c142d39a.js.map": "/easymedia/static/js/main.c142d39a.js.map"
+    "main.815253d6.js.map": "/easymedia/static/js/main.815253d6.js.map"
   },
   "entrypoints": [
     "static/css/main.986522e7.css",
-    "static/js/main.c142d39a.js"
+    "static/js/main.815253d6.js"
   ]
 }
