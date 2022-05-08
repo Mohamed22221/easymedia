@@ -4,14 +4,14 @@ import LinkIcon from '@mui/icons-material/Link';
 const FilterData = ({menueItems}) => {
     const DataFilter = menueItems.map((item)=>{
         return (
-            <div className='card' data-aos="flip-right" key={item.id}>
+            <div className='card' data-aos="flip-right" key={item.id} >
                 <div className='img'>
                 <img src={item.img} />
                </div>
-               <div className='apout'>
+               <div className='apout' >
                <h2 className="card-title">{item.name}</h2>
                <p>{item.discription}</p>
-               <a href={item.link} target="_blank"><LinkIcon className="LinkIcon" /></a>
+               <a href={item.link} target="_blank">{item.link === "" ? null : <LinkIcon className="LinkIcon" />}</a>
                </div>
             </div>
 
@@ -99,6 +99,7 @@ p , a{
 a{
   width: 80px;
   .LinkIcon{
+   
     font-size: 50px;
     color:white
   }

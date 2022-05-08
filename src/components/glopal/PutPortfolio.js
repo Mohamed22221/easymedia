@@ -9,8 +9,7 @@ const PutPortfolio = ({Filter}) => {
         <button type='button' onClick={()=>Filter('All') } >All</button>
         <button type='button' onClick={()=>Filter('cv') } >Software Services</button>
         <button onClick={()=>Filter('adobe xd') } >Media Production</button>
-        <button onClick={()=>Filter('React') } >Social</button>
-        <button onClick={()=>Filter('html') } >Media</button>
+        <button onClick={()=>Filter('Social') } >Social Media</button>
         <button onClick={()=>Filter('adobe xd') } >Branding</button>
 
     </StyleButoon>
