@@ -120,15 +120,6 @@ const DataProject = [
         img:port10,
         link:"",
 
-    },    
-     
-     
- 
-
-    
- 
-   
-  
-          
+    },         
 ]
 export default DataProject

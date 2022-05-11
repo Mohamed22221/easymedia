@@ -1,33 +1,97 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import LinkIcon from '@mui/icons-material/Link';
+import CloseIcon from '@mui/icons-material/Close';
 const FilterData = ({menueItems}) => {
-    const DataFilter = menueItems.map((item)=>{
-        return (
-            <div className='card' data-aos="flip-right" key={item.id} >
-                <div className='img'>
+  const [show , setShow] = useState(false)
+  const [imgSrc , setImgSrc ] = useState("")
+
+  const getImg = (item) =>{
+    if (item.type === "Social") {
+      setShow(true)
+      setImgSrc(item.img)
+    }else{
+      return
+    }
+    
+  }
+    
+        
+    
+  return (
+    <StyleFilter>
+        <div className='main-data' >
+            <div className={show ? "show open" : "show"}>
+              <img src={imgSrc} />
+              <CloseIcon className='exit' onClick={()=> setShow(false) } />
+            </div>
+            {menueItems.map(item =>{
+              return (
+                <div className='card' key={item.id} data-aos="flip-right"  onClick={()=> getImg(item)}   >
+                <div className='img' >
                 <img src={item.img} />
                </div>
-               <div className='apout' >
+               <div className='apout' about={item.type} >
                <h2 className="card-title">{item.name}</h2>
                <p>{item.discription}</p>
                <a href={item.link} target="_blank">{item.link === "" ? null : <LinkIcon className="LinkIcon" />}</a>
                </div>
-            </div>
+              </div> 
+              )
+            })
 
-            )
-    })
-  return (
-    <StyleFilter>
-        <div className='main-data'>
-          {DataFilter}  
+            }
         </div>
+        
     </StyleFilter>
   )
 }
 const StyleFilter = styled.div`
 
 .main-data{
+  .show{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: #000000d1;
+    display: flex;
+    transition:opacity 0.4s ease , visibility 0.4s ease-in-out , transform 0.4s ease-in-out ;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transform: scale(0);
+    img{
+      height: 80%;
+    }
+    @media (max-width:770px) {
+      img{
+        width: 90%;
+        height: 50%;
+      }
+    }
+
+  }
+  .show.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .exit{
+    position: absolute;
+    right: 50px;
+    z-index: 2001;
+    font-size: 50px;
+    top: 80px;
+    color: white;
+    cursor: pointer;
+  }
     .card{
         position: relative;
         width: 270px;
@@ -105,7 +169,7 @@ a{
   }
 }
  &:hover{
-    background-color :#cb1e0087 ;
+    background-color : #cb1e0087     ;
     p , a{
   opacity: 1;
   transform: translateY(70px);
