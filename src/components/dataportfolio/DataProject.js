@@ -8,8 +8,11 @@ import port7 from"../../img/social-02.jpeg"
 import port8 from"../../img/social-03.jpeg"
 import port9 from"../../img/social-04.jpeg"
 import port10 from"../../img/social-05.jpeg"
-
-
+import prand1 from"../../img/prand1.jpeg"
+import prand2 from"../../img/prand2.jpeg"
+import pdfFlowers from "../../img/flowers.pdf"
+import pdfpranding from "../../img/branding.pdf"
+import pdfSafa from "../../img/safa.pdf"
 const DataProject = [
  
     {
@@ -35,20 +38,10 @@ const DataProject = [
     {
         id:3,
         type:"cv",
-        name:"Flowers",
+        name:"JB arrangement",
         discription:"Flowers",
         link:"https://jb-flowers.com/" ,
         img:port3,
-        
-
-    },
-    {
-        id:4,
-        type:"adobe xd",
-        name:"Faster Option",
-        discription:"Faster Option",
-        link:"https://fstdelivery.com/",
-        img:port4,
         
 
     },
@@ -120,6 +113,31 @@ const DataProject = [
         img:port10,
         link:"",
 
-    },         
+    },
+    {
+        id:12,
+        type:"prand",
+        name:"JB arrangement flowers",
+        discription:"JB arrangement flowers",
+        link:pdfFlowers ,
+        img:port3,      
+    },
+    {
+        id:13,
+        type:"prand",
+        name:"Kalimantan perfumes ",
+        discription:"Kalimintan perfumes ",
+        link:pdfpranding ,
+        img:prand1,      
+    },
+    {
+        id:14,
+        type:"prand",
+        name:"Lawyer Safa Khalid ",
+        discription:"Lawyer Safa Khalid",
+        link:pdfSafa ,
+        img:prand2,      
+    },
+            
 ]
 export default DataProject

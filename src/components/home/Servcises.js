@@ -42,7 +42,7 @@ design.</p>
                 <p>Advertising is a wingman to your company. Grab
 attention with attractive and descriptive ads,
 that leaves a mark in the viewers head</p>
-                <button>READ MORE</button>
+                <button>Read More</button>
             </div>
             <div className='item-servces' data-aos="fade-right">
                 <img src={svg3}/>
