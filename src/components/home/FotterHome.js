@@ -24,13 +24,14 @@ const FotterHome = () => {
             <p><a href='mailto:info@easymedia.agency'>info@easymedia.agency</a></p>
             <p><a href='tel:+965 2220 9570'>+965 2220 9570</a></p>
             <p><a href='tel:+965 5537 2333'>+965 5537 2333</a></p>
+            <p><a href='tel:+971 54 233 3232'>+971 54 233 3232</a></p>
         </div>
         <div className='item-fotter' >
             <h2>Social media</h2>
             <a href='https://www.facebook.com/easymedia.agency' target="_blank"><img src={face} /></a>
             <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><img src={insta} /></a>
             <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><img src={linked} /></a>
-            <a href='https://wa.me/0096562220286'  target="_blank"><img src={wats} /></a>
+            <a href='https://wa.me/0096555372333'  target="_blank"><img src={wats} /></a>
         </div>
         </div>
         <div className='copy-right' >
@@ -89,7 +90,7 @@ const FotterStyle = styled.div`
              img{
                  width: 30px;
                  margin:0 11px;
-                 filter: grayscale(20%) contrast(100%);
+                 
                 
 
              }
