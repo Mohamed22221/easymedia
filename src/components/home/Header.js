@@ -8,6 +8,7 @@ import Button from '../glopal/Button'
 import { Container } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = ({title}) => {
   useEffect(()=>{
@@ -43,7 +44,9 @@ const Header = ({title}) => {
         <div className='right-header'>
           <h1 data-aos="fade-down">Easy Way</h1>
           <p data-aos="zoom-in">easier way to find  your superpower.</p>
+          <Link   to="/easymedia#About" >
           <Button title="Know More" />
+          </Link>
 
         </div>
       </div>

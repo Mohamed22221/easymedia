@@ -4,9 +4,9 @@ import styled from 'styled-components'
 const Button = ({title}) => {
   return (
           <StyleButtom >
-                <div className="banner">
-      <a href="" className='butn butn__new'><span>{title}</span></a>
-    </div>
+            <div className="banner">
+              <a href="" className='butn butn__new'><span>{title}</span></a>
+            </div>
           </StyleButtom>
 
   )

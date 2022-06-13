@@ -10,7 +10,7 @@ import VideoAbout from '../components/home/VideoAbout'
 
 const Home = () => {
   return (
-    <div>
+    <>
         <Header/>
         <AboutHeader/>
         <VideoAbout/>
@@ -19,7 +19,7 @@ const Home = () => {
         <Portfolio/>
         <ClientHome/>
         <FotterHome/>
-    </div>
+    </>
   )
 }
 export default Home
