@@ -11,32 +11,28 @@ const AboutHeader = () => {
     <AboutHeaderStyle id='About'>
       
       <PigTitlePage title="About"
-       h1="var(--background-dark-color)"
-       spanprimary="var(--primary-color)"
-       />
+       h1="var(--background-dark-color)" spanprimary="var(--primary-color)"/>
       <div className='main-apoutmedia'>
         <div className='left-apout'>
-        <p data-aos="fade-right">Easy Media is a Marketing Company based in 
-        Kuwait. In today’s day and age, marketing is very in-
-        tegral to any company that aims for success. Our 
-        Job is to assist the companies in their marketing 
-        journey, making it fruitful and successful. Our 
-        target market is very much dependent on our cli-
-        ents, target market, as we shape each and every 
-        plan carefully for our clients, needs to best serve 
-        their interests. We enable our clients to reach 
-        their goals by removing the barriers in their way 
-        that stop them from reaching their potential... </p>
+           <p data-aos="fade-right">Easy Media is a Marketing Company based in 
+               Kuwait. In today’s day and age, marketing is very in-
+               tegral to any company that aims for success. Our 
+               Job is to assist the companies in their marketing 
+               journey, making it fruitful and successful. Our 
+               target market is very much dependent on our cli-
+               ents, target market, as we shape each and every 
+               plan carefully for our clients, needs to best serve 
+               their interests. We enable our clients to reach 
+               their goals by removing the barriers in their way 
+               that stop them from reaching their potential... 
+        </p>
         </div>
         <div className='right-apout'>
           <img src={apoutimg} alt="photo" data-aos="fade-down" />
         </div>
-        
+        {/*other img animation right apout  */}
           <img src={animateimg1} alt="photo" className="animateimg1" data-aos="fade-down"/>
-          <img src={animateimg2} alt="photo" className="animateimg2" data-aos="fade-down"/>
-
-
-      
+          <img src={animateimg2} alt="photo" className="animateimg2" data-aos="fade-down"/> 
       </div>
      
     </AboutHeaderStyle>
@@ -79,24 +75,25 @@ font-size: 13px;
 }  
 }
 .right-apout{
+  height: 100%;
   position: absolute;
   right: 4rem;
   bottom:  0;
   z-index: 1;
   align-items: flex-start;
   -webkit-animation-name: MoveUpDownLeft;
-    -moz-animation-name: MoveUpDownLeft;
-    animation-name: MoveUpDownLeft;
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  -moz-animation-name: MoveUpDownLeft;
+  animation-name: MoveUpDownLeft;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-timing-function: linear;
     
 @media (max-width:550px) {
   top: 480px;
@@ -134,7 +131,7 @@ font-size: 13px;
    animation: Rotate 9s linear infinite;
    @media (max-width:550px) {
     right: 15rem;   
-  top: 600px;
+    top: 600px;
 }  
 }
 

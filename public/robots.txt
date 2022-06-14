@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /cdn-cgi/
-
-
-
+Disallow: /cgi-bin/
+Allow:/
 Sitemap: https://www.easymedia.agency/sitemap.xml
+
+

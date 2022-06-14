@@ -118,7 +118,8 @@ svg{
     }
       img{
         width: 800px;
-       transform: scaleX(-1);
+       
+         transform: scaleX(-1);
       
 
       @media (max-width:1416px) {
