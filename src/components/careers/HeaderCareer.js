@@ -6,7 +6,7 @@ const HeaderCareer = () => {
     <HeaderCarrierStyle>
         <div className='main-apout' data-aos="fade-down">
         <div className='left-apout'>
-       <img src={Join} />
+       <img src={Join} alt="join" />
         </div>
             <div className='right-apout'>
             <p>

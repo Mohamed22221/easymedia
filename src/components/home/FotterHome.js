@@ -28,10 +28,10 @@ const FotterHome = () => {
         </div>
         <div className='item-fotter' >
             <h2>Social media</h2>
-            <a href='https://www.facebook.com/easymedia.agency' target="_blank"><img src={face} /></a>
-            <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><img src={insta} /></a>
-            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><img src={linked} /></a>
-            <a href='https://wa.me/0096555372333'  target="_blank"><img src={wats} /></a>
+            <a href='https://www.facebook.com/easymedia.agency' target="_blank"><img src={face} alt="face" /></a>
+            <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><img src={insta} alt="insta" /></a>
+            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><img src={linked} alt="insta" /></a>
+            <a href='https://wa.me/0096555372333'  target="_blank"><img src={wats} alt="wats" /></a>
         </div>
         </div>
         <div className='copy-right' >

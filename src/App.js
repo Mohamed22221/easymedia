@@ -8,8 +8,6 @@ import Supscripe from "./pages/Supscripe";
 import { ToastProvider } from 'react-toast-notifications';
 function App() {
 
-
-
   return (
     <div className="App">
     <ToastProvider autoDismiss

@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { HashLink as Link } from 'react-router-hash-link';
 const Button = ({title}) => {
   return (
           <StyleButtom >
             <div className="banner">
-              <a href="" className='butn butn__new'><span>{title}</span></a>
+              <Link   to="/easymedia#About"  className='butn butn__new'><span>{title}</span></Link>
             </div>
           </StyleButtom>
 

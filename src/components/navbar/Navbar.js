@@ -18,7 +18,7 @@ const Navbar = () => {
          
           <div className="logo">
           <Link onClick={boxHandler} href="#Home"  to="/easymedia#Home" >
-          <img src={logo} />
+          <img src={logo} alt="photo" />
             </Link>
            
         </div>

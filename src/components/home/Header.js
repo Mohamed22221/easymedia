@@ -31,22 +31,22 @@ const Header = ({title}) => {
           <div className='super-img'
      data-aos-anchor-placement="top-bottom"
    >
-            <img src={superimg} data-aos="fade-up" />
+            <img src={superimg} alt="photo" data-aos="fade-up" />
           </div>
           <div className='animateimg-2'>
-            <img src={animateimg} className="animateimg1" data-aos="fade-down" />
+            <img src={animateimg} alt="photo" className="animateimg1" data-aos="fade-down" />
 
           </div>
           <div className='animateimg-3'>
-            <img src={animateimg1} className="animateimg2" data-aos="fade-up" />
+            <img src={animateimg1} alt="photo" className="animateimg2" data-aos="fade-up" />
           </div>
         </div>
         <div className='right-header'>
           <h1 data-aos="fade-down">Easy Way</h1>
           <p data-aos="zoom-in">easier way to find  your superpower.</p>
-          <Link   to="/easymedia#About" >
+          
           <Button title="Know More" />
-          </Link>
+          
 
         </div>
       </div>

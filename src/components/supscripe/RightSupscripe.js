@@ -15,7 +15,7 @@ const RightSupscripe = () => {
       </div>
       </div>
       <div>
-        <img src={superimg} />
+        <img src={superimg} alt="photo" />
       </div>
     </StyleRightSupscripe>
   )

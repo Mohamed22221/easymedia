@@ -22,14 +22,14 @@ const FilterData = ({menueItems}) => {
     <StyleFilter>
         <div className='main-data' >
             <div className={show ? "show open" : "show"}>
-              <img src={imgSrc} />
+              <img src={imgSrc} alt="photo" />
               <CloseIcon className='exit' onClick={()=> setShow(false) } />
             </div>
             {menueItems.map(item =>{
               return (
                 <div className='card' key={item.id} data-aos="flip-right"  onClick={()=> getImg(item)}   >
                 <div className='img' >
-                <img src={item.img} />
+                <img src={item.img} alt="photo" />
                </div>
                <div className='apout' about={item.type} >
                <h1 className="card-title">{item.name}</h1>

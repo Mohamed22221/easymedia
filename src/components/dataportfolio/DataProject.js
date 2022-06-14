@@ -73,7 +73,7 @@ const DataProject = [
         name:"Self boom",
         discription:"Self boom",
         img:port6,
-        link:"", 
+        link:"#",
     },
     {
         id:8,
@@ -81,7 +81,7 @@ const DataProject = [
         name:" X dogs school",
         discription:" X dogs school",
         img:port7,
-        link:"",
+        link:"#",
         
 
     },    
@@ -91,7 +91,7 @@ const DataProject = [
         name:" bu adnan restaurant",
         discription:" bu adnan restaurant",
         img:port8,
-        link:"",
+        link:"#",
         
 
     },    
@@ -101,7 +101,7 @@ const DataProject = [
         name:"JB arrangement",
         discription:" JB arrangement",
         img:port9,
-        link:"",
+        link:"#",
         
 
     },    
@@ -111,7 +111,7 @@ const DataProject = [
         name:"ahjiz",
         discription:"ahjiz",
         img:port10,
-        link:"",
+        link:"#",
 
     },
     {

@@ -18,7 +18,7 @@ const Servcises = ({ title }) => {
             <SmTitlePage title="Services" />
             <div className='main-servces'>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg} />
+                    <img src={svg} alt="photo" />
                     <h3>Social media</h3>
                     <p>Building a social media presence is very
                         important for any business as it is a direct link
@@ -28,7 +28,7 @@ const Servcises = ({ title }) => {
                     <button>READ MORE</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg1} />
+                    <img src={svg1} alt="photo" />
                     <h3>Branding design</h3>
                     <p>Branding is a system that makes you recognizable
                         through all the mediums, mainly consisting of a
@@ -37,7 +37,7 @@ const Servcises = ({ title }) => {
                     <button>READ MORE</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg2} />
+                    <img src={svg2} alt="photo" />
                     <h3>Advertising</h3>
                     <p>Advertising is a wingman to your company. Grab
                         attention with attractive and descriptive ads,
@@ -45,7 +45,7 @@ const Servcises = ({ title }) => {
                     <button>Read More</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg3} />
+                    <img src={svg3} alt="photo" />
                     <h3>Photography</h3>
                     <p>Photography is all about expressing without
                         speaking. Have photos taken professionally to
@@ -54,7 +54,7 @@ const Servcises = ({ title }) => {
                     <button>READ MORE</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg4} />
+                    <img src={svg4} alt="photo" />
                     <h3>Development</h3>
                     <p>We work on developing our services
                         continuously from time to time and adapt our
@@ -63,7 +63,7 @@ const Servcises = ({ title }) => {
                     <button>READ MORE</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
-                    <img src={svg5} />
+                    <img src={svg5} alt="photo" />
                     <h3>E-service</h3>
                     <p>Building yourself an E-Store and taking your
                         business online completely changes the

@@ -23,12 +23,12 @@ const Slide = () => {
   return (
     <SliderStyle data-aos="fade-down">
      <Carousel breakPoints={breakPoints}>
-        <div className='item'><img src={clint2}/></div>
-        <div className='item'><img src={clint5}/></div>
-        <div className='item'><img src={clint3}/></div>
-        <div className='item'><img src={clint4}/></div>
-        <div className='item'><img src={clint6}/></div>
-        <div className='item'><img src={clint1}/></div>
+        <div className='item'><img src={clint2} alt="clint"/></div>
+        <div className='item'><img src={clint5} alt="clint"/></div>
+        <div className='item'><img src={clint3} alt="clint"/></div>
+        <div className='item'><img src={clint4} alt="clint"/></div>
+        <div className='item'><img src={clint6} alt="clint"/></div>
+        <div className='item'><img src={clint1} alt="clint"/></div>
 
       </Carousel>
     </SliderStyle>

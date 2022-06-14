@@ -29,11 +29,11 @@ const AboutHeader = () => {
         that stop them from reaching their potential. </p>
         </div>
         <div className='right-apout'>
-          <img src={apoutimg} data-aos="fade-down" />
+          <img src={apoutimg} alt="photo" data-aos="fade-down" />
         </div>
         
-          <img src={animateimg1} className="animateimg1" data-aos="fade-down"/>
-          <img src={animateimg2} className="animateimg2" data-aos="fade-down"/>
+          <img src={animateimg1} alt="photo" className="animateimg1" data-aos="fade-down"/>
+          <img src={animateimg2} alt="photo" className="animateimg2" data-aos="fade-down"/>
 
 
       

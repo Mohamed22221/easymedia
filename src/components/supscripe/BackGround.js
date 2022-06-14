@@ -4,7 +4,7 @@ import svgsupscripe from "../../img/supscripe.svg"
 
 const BackGround = () => {
   return (
-    <StyleBackGround><img src={svgsupscripe} /></StyleBackGround>
+    <StyleBackGround><img src={svgsupscripe} alt="photo" /></StyleBackGround>
   )
 }
 const StyleBackGround = styled.div`
