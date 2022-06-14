@@ -18,6 +18,7 @@ const Header = ({title}) => {
   },[])
   return (
     <HeaderStyle id="Home" >
+      {/*main photo header */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1925 1047.96">
         <g id="Group_11" data-name="Group 11" transform="translate(1 -100)">
           <path id="Path_13" data-name="Path 13" d="M1920,1032.05V100H0v933.49c36.85,18.07,72.05,33.47,105.71,46.51H719.97c59.48-21.81,118.45-42.27,197.93-48.43l87.68-.14c70.44,5.94,121.9,26.55,175.63,48.57h634.5Z" fill="#e53516" />
@@ -25,12 +26,11 @@ const Header = ({title}) => {
           <path id="Path_15" data-name="Path 15" d="M1924,1030c-1.33.69-2.67,1.38-4,2.05-36.23,18.6-70.98,34.47-104.29,47.95-215.53,87.19-371.18,74.15-484.71,50-59.47-12.65-105.4-31.81-149.79-50-53.73-22.02-105.19-42.63-175.63-48.57l914.42-1.42Z" fill="#e53516" />
         </g>
       </svg>
+       {/*content header */}
       <Container maxWidth="xl">
       <div className='content-header' >
         <div className='left-header'>
-          <div className='super-img'
-     data-aos-anchor-placement="top-bottom"
-   >
+          <div className='super-img' data-aos-anchor-placement="top-bottom">
             <img src={superimg} alt="photo" data-aos="fade-up" />
           </div>
           <div className='animateimg-2'>
@@ -60,6 +60,7 @@ margin: 0;
 padding: 0;
 position: relative;
 overflow: hidden;
+//ovrelay photo
 &::before{
       content: "";
       position: absolute;
@@ -97,19 +98,19 @@ svg{
       left: 0;
       transform: translateY(-30%);
       z-index: 2;
-     -webkit-animation-name: MoveUpDown;
-    -moz-animation-name: MoveUpDown;
-    animation-name: MoveUpDown;
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+      -webkit-animation-name: MoveUpDown;
+      -moz-animation-name: MoveUpDown;
+      animation-name: MoveUpDown;
+      -webkit-animation-duration: 3s;
+      -moz-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -moz-animation-direction: alternate;
+      animation-direction: alternate;
+      animation-timing-function: linear;
     
       @media (max-width:663px) { 
       top: 320px ;
@@ -120,19 +121,19 @@ svg{
        transform: scaleX(-1);
       
 
-     @media (max-width:1416px) {
+      @media (max-width:1416px) {
         width: 500px;
   }
   
-    @media (max-width:950px) {
+      @media (max-width:950px) {
         width: 400px;
   }
-    @media (max-width:663px) { 
-      width:380px ;  
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-    }
+      @media (max-width:663px) { 
+        width:380px ;  
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+  }
   
       }
 

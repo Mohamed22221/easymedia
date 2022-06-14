@@ -26,7 +26,7 @@ const AboutHeader = () => {
         plan carefully for our clients, needs to best serve 
         their interests. We enable our clients to reach 
         their goals by removing the barriers in their way 
-        that stop them from reaching their potential. </p>
+        that stop them from reaching their potential... </p>
         </div>
         <div className='right-apout'>
           <img src={apoutimg} alt="photo" data-aos="fade-down" />
