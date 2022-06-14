@@ -12,68 +12,68 @@ import svg5 from "../../img/svg5.svg"
 
 
 
-const Servcises = ({title}) => {
-  return (
-    <ServciesStyle id='Services'>
-        <SmTitlePage title="Services" />
-        <div className='main-servces'>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg}/>
-                <h3>Social media</h3>
-                <p>Building a social media presence is very
-important for any business as it is a direct link
-with the user base. Create a big user traffic on all
-platforms with static ads, dynamic product ads
-and much more</p>
-                <button>READ MORE</button>
+const Servcises = ({ title }) => {
+    return (
+        <ServciesStyle id='Services'>
+            <SmTitlePage title="Services" />
+            <div className='main-servces'>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg} />
+                    <h3>Social media</h3>
+                    <p>Building a social media presence is very
+                        important for any business as it is a direct link
+                        with the user base. Create a big user traffic on all
+                        platforms with static ads, dynamic product ads
+                        and much more</p>
+                    <button>READ MORE</button>
+                </div>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg1} />
+                    <h3>Branding design</h3>
+                    <p>Branding is a system that makes you recognizable
+                        through all the mediums, mainly consisting of a
+                        name, logo, visual identity and digital product
+                        design.</p>
+                    <button>READ MORE</button>
+                </div>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg2} />
+                    <h3>Advertising</h3>
+                    <p>Advertising is a wingman to your company. Grab
+                        attention with attractive and descriptive ads,
+                        that leaves a mark in the viewers head</p>
+                    <button>Read More</button>
+                </div>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg3} />
+                    <h3>Photography</h3>
+                    <p>Photography is all about expressing without
+                        speaking. Have photos taken professionally to
+                        better visually describe your products without
+                        saying a word.</p>
+                    <button>READ MORE</button>
+                </div>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg4} />
+                    <h3>Development</h3>
+                    <p>We work on developing our services
+                        continuously from time to time and adapt our
+                        marketing platform to keep pace with all
+                        developments and circumstances</p>
+                    <button>READ MORE</button>
+                </div>
+                <div className='item-servces' data-aos="fade-right">
+                    <img src={svg5} />
+                    <h3>E-service</h3>
+                    <p>Building yourself an E-Store and taking your
+                        business online completely changes the
+                        dynamics of your business as it introduces new
+                        markets for you to conquer.</p>
+                    <button>READ MORE</button>
+                </div>
             </div>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg1}/>
-                <h3>Branding design</h3>
-                <p>Branding is a system that makes you recognizable
-through all the mediums, mainly consisting of a
-name, logo, visual identity and digital product
-design.</p>
-                <button>READ MORE</button>
-            </div>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg2}/>
-                <h3>Advertising</h3>
-                <p>Advertising is a wingman to your company. Grab
-attention with attractive and descriptive ads,
-that leaves a mark in the viewers head</p>
-                <button>Read More</button>
-            </div>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg3}/>
-                <h3>Photography</h3>
-                <p>Photography is all about expressing without
-speaking. Have photos taken professionally to
-better visually describe your products without
-saying a word.</p>
-                <button>READ MORE</button>
-            </div>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg4}/>
-                <h3>Development</h3>
-                <p>We work on developing our services
-continuously from time to time and adapt our
-marketing platform to keep pace with all
-developments and circumstances</p>
-                <button>READ MORE</button>
-            </div>
-            <div className='item-servces' data-aos="fade-right">
-                <img src={svg5}/>
-                <h3>E-service</h3>
-                <p>Building yourself an E-Store and taking your
-business online completely changes the
-dynamics of your business as it introduces new
-markets for you to conquer.</p>
-                <button>READ MORE</button>
-            </div>
-        </div>
-    </ServciesStyle>
-  )
+        </ServciesStyle>
+    )
 }
 const ServciesStyle = styled.div`
 

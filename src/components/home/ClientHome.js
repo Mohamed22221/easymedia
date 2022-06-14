@@ -9,7 +9,7 @@ const ClientHome = () => {
         <SmTitlePage title="Clients"/>
         <div className='paragraph'>
             <p data-aos="fade-right">From 2020 tell now we Has been learning and innovation for Easy Media , We Have been Working on
- Recruiting Greater Team Mates & Executing Bigger Projects Building a name for Affordable And Reliable Services</p>
+            Recruiting Greater Team Mates & Executing Bigger Projects Building a name for Affordable And Reliable Services</p>
         </div>
         <Slide/>
     </ClientStyle>

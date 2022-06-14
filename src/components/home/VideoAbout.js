@@ -12,9 +12,7 @@ const VideoAbout = () => {
     type="video/mp4"  
     autoPlay={true}
     preLoad="auto"
-    loop
-    >
-       
+    loop>
     </VideoStyle>
   )
 }

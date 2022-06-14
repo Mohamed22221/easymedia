@@ -32,7 +32,7 @@ const FilterData = ({menueItems}) => {
                 <img src={item.img} />
                </div>
                <div className='apout' about={item.type} >
-               <h2 className="card-title">{item.name}</h2>
+               <h1 className="card-title">{item.name}</h1>
                <p>{item.discription}</p>
                <a href={item.link} target="_blank">{item.link === "" ? null : <LinkIcon className="LinkIcon" />}</a>
                </div>
@@ -145,11 +145,10 @@ box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
 -webkit-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
 -moz-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
   border-radius: 10px;
- h2{
-    transition: 0.5s;
-    color: white;
+ h1{
+     transition: 0.5s;
+     color: white;
      font-size: 20px;
-     
      padding: 10px;
      background-color: var(--primary-color);
      

@@ -13,7 +13,7 @@ const PigTitlePage = ({title , h1 ,spanprimary }) => {
     <PigStyleTitle>
        <div className='main-title' data-aos="fade-down">
        <h1 style={{color:h1}}>{title}</h1>
-        <h3 >easy<span style={{color:spanprimary}}>media.</span></h3>
+        <h2 >easy<span style={{color:spanprimary}}>media.</span></h2>
         </div> 
     </PigStyleTitle>
   )
@@ -25,11 +25,11 @@ const PigStyleTitle =styled.div`
     @media (max-width:1000px) {
     padding: 0 2.2rem;    
     } 
-    .h1{
+    h1{
         font-size: 38px;
         
     }
-    h3{
+    h2{
         color: var(--background-dark-color);
         font-size  :20px ;
     }
