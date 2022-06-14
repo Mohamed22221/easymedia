@@ -57,7 +57,7 @@ const Form = ({content }) => {
         Label:"Mobile Number",
         required:true,
         pattern:"^([0|\+[0-9]{1,5})?([0-9]{10})$" ,
-        error:"Please write the international code before the number like this (+20126798122)" ,
+        error:"Please write the international code before the number like this (+965 99XX XXXX)" ,
         
      },
      {
@@ -68,15 +68,7 @@ const Form = ({content }) => {
         required:true,
         Label:"Job Title"
      },
-     {
-        id:6,
-        name:"portfolio",
-        placeholder:"But your Bortfolio",
-        type:"text",
-        Label:"portfolio website",
-        required:true,
-        error:"Please enter your Bortfolio"
-     }
+
     ] 
     // take value onchange inbut
     const HandellSupmit = (e)=>{
