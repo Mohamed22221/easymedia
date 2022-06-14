@@ -55,8 +55,11 @@ const Servcises = ({ title }) => {
                 </div>
                 <div className='item-servces' data-aos="fade-right">
                     <img src={svg4} alt="photo" />
-                    <h3>التطوير</h3>
-                    <p>قبل ٣ ساعات — بي بي سي العربية هي شبكة لنقل الأخبار والمعلومات ومقاطع الفيديو إلى العالم عبر عدة </p>
+                    <h3>Development</h3>
+                    <p>We work on developing our services
+                        continuously from time to time and adapt our
+                        marketing platform to keep pace with all
+                        developments and circumstances</p>
                     <button>READ MORE</button>
                 </div>
                 <div className='item-servces' data-aos="fade-right">
