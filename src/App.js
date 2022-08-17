@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Supscripe from "./pages/Supscripe";
 
 import { ToastProvider } from 'react-toast-notifications';
+import Terms from "./components/glopal/Terms";
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="easymedia" element={<Home/>} />
         <Route path="/Careers" element={<Carrier/>} />
         <Route path="/subscribe" element={<Supscripe/>} />
+        <Route path="terms" element={<Terms/>} />
         <Route path="/jop" element={<JobId/>} >
         <Route path=":jopId" element={<JobId/>} />
         </Route>
