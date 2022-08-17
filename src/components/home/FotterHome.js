@@ -5,6 +5,7 @@ import wats from "../../img/wats.png"
 import face from "../../img/face.png"
 import linked from "../../img/linked.png"
 import insta from "../../img/insta.png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -35,7 +36,9 @@ const FotterHome = () => {
         </div>
         </div>
         <div className='copy-right' >
+
         <h2>Copyright<span><CopyrightIcon className='copy'/></span></h2>
+        <Link to="/terms"><p>Terms and Conditions</p></Link>
         </div>
        
 
@@ -102,11 +105,17 @@ const FotterStyle = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         color: white;
         font-weight: 400;
         font-size: 14px;
         letter-spacing: 2px;
         padding: 80px 0 40px;
+        a{
+            color: white;
+            margin-top: 8px;
+            font-size: 12px;
+        }
         h2{
             padding-right: 18px;
             position: relative;
