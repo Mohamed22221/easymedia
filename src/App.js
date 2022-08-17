@@ -4,9 +4,10 @@ import Navbar from './components/navbar/Navbar';
 import Carrier from "./pages/Carrier";
 import Home from './pages/Home';
 import Supscripe from "./pages/Supscripe";
-
 import { ToastProvider } from 'react-toast-notifications';
 import Terms from "./components/glopal/Terms";
+import ScrollToTop from "./components/glopal/ScrollToTop";
+
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
     <ToastProvider autoDismiss
     autoDismissTimeout={4000} placement="bottom-center">
       <Navbar/>
+      <ScrollToTop />
       <Routes>Carrier
         <Route path="/" element={<Home/>} />
         <Route path="easymedia" element={<Home/>} />
