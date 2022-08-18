@@ -27,7 +27,7 @@ const FilterData = ({menueItems}) => {
             </div>
             {menueItems.map(item =>{
               return (
-                <div className='card' key={item.id} data-aos="flip-right"  onClick={()=> getImg(item)}   >
+                <div className='card' key={item.id} data-aos="zoom-in"  onClick={()=> getImg(item)}   >
                 <div className='img' >
                 <img src={item.img} alt="photo" />
                </div>
@@ -49,6 +49,7 @@ const FilterData = ({menueItems}) => {
 const StyleFilter = styled.div`
 
 .main-data{
+  
   .show{
     height: 100%;
     width: 100%;
@@ -61,7 +62,7 @@ const StyleFilter = styled.div`
     background-color: #000000d1;
     display: flex;
     transition:opacity 0.4s ease , visibility 0.4s ease-in-out , transform 0.4s ease-in-out ;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     visibility: hidden;
     opacity: 0;
@@ -69,6 +70,8 @@ const StyleFilter = styled.div`
     transform: scale(0);
     img{
       height: 80%;
+      
+
     }
     @media (max-width:770px) {
       img{
@@ -94,7 +97,7 @@ const StyleFilter = styled.div`
   }
     .card{
         position: relative;
-        width: 270px;
+        width: 260px;
         height: 250px;
         &:hover img{
           transform:scale(1.1) ;
@@ -107,7 +110,7 @@ const StyleFilter = styled.div`
   padding:3rem 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
     
   gap: 30px;
 @media (max-width:500px) {
@@ -124,6 +127,7 @@ const StyleFilter = styled.div`
         border: 0px solid;
         border-radius: 7px;
         padding: 60px 30px 30px;
+        
 
     }
 }

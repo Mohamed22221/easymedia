@@ -35,9 +35,9 @@ const Slide = () => {
   )
 }
 const SliderStyle = styled.div`
-padding: 7rem 4rem;
+padding: 7rem 0rem;
 @media (max-width:500px) {
-  padding: 7rem 2rem;
+  padding: 7rem 1rem;
 }
 .item{
   display: flex;

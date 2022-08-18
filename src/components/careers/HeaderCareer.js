@@ -1,9 +1,11 @@
+import { Container } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
 import Join from '../../img/JoinTeam.png'
 const HeaderCareer = () => {
   return (
     <HeaderCarrierStyle>
+        <Container maxWidth="lg" >
         <div className='main-apout' data-aos="fade-down">
         <div className='left-apout'>
        <img src={Join} alt="join" />
@@ -16,6 +18,7 @@ const HeaderCareer = () => {
             positions and apply today!</p>
             </div>
         </div>
+        </Container>
     </HeaderCarrierStyle>
   )
 }

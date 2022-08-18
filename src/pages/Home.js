@@ -5,19 +5,21 @@ import ContactHome from '../components/home/ContactHome'
 import FotterHome from '../components/home/FotterHome'
 import Header from '../components/home/Header'
 import Portfolio from '../components/home/Portfolio'
+import SecHeader from '../components/home/SecHeader'
 import Servcises from '../components/home/Servcises'
 import VideoAbout from '../components/home/VideoAbout'
 
 const Home = () => {
   return (
     <>
-        <Header/>
+        <SecHeader />
+        {/*<Header/>*/}
         <AboutHeader/>
         <VideoAbout/>
         <Servcises/>
-        <ContactHome/>
         <Portfolio/>
         <ClientHome/>
+        <ContactHome/>
         <FotterHome/>
     </>
   )

@@ -4,10 +4,11 @@ import PigTitlePage from '../glopal/PigTitlePage'
 import apoutimg from '../../img/02.png'
 import animateimg1 from "../../img/flat1.png"
 import animateimg2 from "../../img/flat2.png"
-
+import { Container } from '@mui/material'
 const AboutHeader = () => {
   
   return (
+    <Container maxWidth="lg">
     <AboutHeaderStyle id='About'>
       
       <PigTitlePage title="About"
@@ -36,29 +37,32 @@ const AboutHeader = () => {
       </div>
      
     </AboutHeaderStyle>
+    </Container>
   )
 }
 const AboutHeaderStyle =styled.div`
 position: relative;
 height: 100%;
-
+padding: 30px 0;
+@media (max-width: 780px) {
+  padding: 10px 0;
+}
+p{
+  padding: 30px 0;
+}
 .main-apoutmedia{
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
-padding: 4rem;
 
-@media (max-width:1000px) {
-  padding: 2.5rem;
-  
-}
+
 @media (max-width:550px) {
   flex-direction:column;
   height: 80vh;
 }
 @media (max-width:376px) {
   flex-direction:column;
-  height: 110vh;
+  height: 100vh;
 }
 .left-apout{
   width: 50%;

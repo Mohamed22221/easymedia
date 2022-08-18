@@ -8,8 +8,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DataCarerr from './DataCareer';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import {Link} from 'react-router-dom';
+import { Container } from '@mui/material';
 const AccordionCarrer = () => {
   return (
+    <Container maxWidth="lg" >
     <AccordionStyle>
       {DataCarerr.map((item) =>{
         return(
@@ -54,20 +56,19 @@ const AccordionCarrer = () => {
 
       
     </AccordionStyle>
+    </Container>
   )
 }
 const AccordionStyle = styled.div`
-padding:2rem 4rem 5rem;
+
 margin-bottom: 40px;
-@media (max-width:500px) {
-    padding: 0rem 2rem;   
-}
+
 h3{
   padding: 15px 0;
 }
 .role{
   p{
-    color: var(--font);
+    color: black;
   }
 }
 
@@ -103,7 +104,7 @@ h3{
   }
 }
 .Experience{
-  color: var(--font);
+  color: black;
   line-height: 40px;
   margin-left: 20px;
   position: relative;

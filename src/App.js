@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
     <ToastProvider autoDismiss
-    autoDismissTimeout={4000} placement="bottom-center">
+    autoDismissTimeout={2000} placement="bottom-center">
       <Navbar/>
       <ScrollToTop />
       <Routes>Carrier

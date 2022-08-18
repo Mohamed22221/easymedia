@@ -1,16 +1,16 @@
+import { Container } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
-import contactsvg from "../../img/cvgcontact.svg"
+import post from "../../img/post-bg.png"
 import PigTitlePage from '../glopal/PigTitlePage'
+import hero from "../../img/hero-1-bg.png"
 const ContactHome = () => {
     return (
+        
         <ContactStyle id='Contact' >
-
             <div className='img' >
-                <PigTitlePage title="Contact"
-                    h1="white"
-                    spanprimary="white"
-                />
+            <Container maxWidth="lg">
+                <PigTitlePage title="Contact" h1="black" spanprimary="var(--primary-color)"/>
                 <form >
                     <div className='one-input' >
                         <label>Your Name</label>
@@ -33,41 +33,53 @@ const ContactHome = () => {
                     </div>
 
                 </form>
+                </Container>
             </div>
 
-
+       
 
         </ContactStyle>
+        
     )
 }
 const ContactStyle = styled.div`
  overflow: hidden;
  position: relative;
-
+ height: 700px;
+ &::after{
+    position: absolute;
+    content: url(${hero});
+    width: 100%;
+    top: 0;
+    z-index: 0;
+ }
+ 
 
 
  .img{
-     position: relative;
-    background-image: url(${contactsvg} );
+    background-image: url(${post});
     background-size:cover;
-     background-repeat: no-repeat;
-    height:1100px ;
-    width: 100%;
+    background-repeat: no-repeat;
+    height:100%;
+    
     
     .main-title{
      position: absolute;
-     top:  230px;
-
+     top:  0px;
      @media (max-width:890px) {
-top: 170px;
+        top: 0px;
     }
  }
  form{
      position: absolute;
-     top: 50%;
+     z-index: 1;
+     top: 65%;
      left: 50%;
-     transform: translate(-50%,-50%);
-
+     transform: translate(-50%,-70%);
+    @media (max-width : 780px) {
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
      .one-input{
 
          display: flex;
@@ -75,7 +87,7 @@ top: 170px;
          padding:7px ;
 
          label{
-             color: white;
+             color: black;
              font-size: 28px;
              position: relative;
              &::after{
@@ -84,14 +96,14 @@ top: 170px;
                 bottom: -5px;
                 width: 62px;
                 height: 2px;
-                background-color: white;
+                background-color: var(--primary-color);
                 left: 0;
              }
          }
          
          input{
              all: unset;
-             border-bottom:1px solid white ;
+             border-bottom:1px solid var(--primary-color) ;
              width: 340px;
              padding: 10px 20px;
              background-color: #ffffff0a;
@@ -99,7 +111,7 @@ top: 170px;
                 width: 280px;
              }
              &::placeholder{
-                 color: white;
+                 color: black;
                  font-size: 13px;
                  opacity: 0.5;
              }
@@ -122,18 +134,13 @@ top: 170px;
         all: unset;
         cursor: pointer;
         padding: 15px 100px;
-        background-color: white;
-        color: var(--primary-color);
-        border-radius: 40px;
-        margin: 5px 0;
-        transition:all 0.5s;
-        border:1px solid white;
-    }
-    button:hover{
         background-color: var(--primary-color);
         color: white;
-        border:1px solid black;
+        border-radius: 40px;
+        margin: 5px 0;
+        border:1px solid white;
     }
+
  }
  }
 

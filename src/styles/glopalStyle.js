@@ -4,7 +4,7 @@ const GlopalStyle = createGlobalStyle`
     --primary-color:#E53516;
     --primary-color-obacity: rgb(153 5 190 / 10%);
     --background-dark-color: #3c3d4a;
-    --font: #303030;
+    --font: #6c757d;
     --font-two:#cbcbcb;
     --white-color: #FFF;
 } 
@@ -23,10 +23,10 @@ html {
 }
 @keyframes MoveUpDown {
     0%, 100% {
-    left: 0;
+    transform: translateX(0);
     }
     50% {
-    left: 15px;
+      transform: translateX(15px);
     }
   }
   @keyframes  MoveUpDownLeft {

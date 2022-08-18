@@ -3,15 +3,20 @@ import styled from 'styled-components'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import wats from "../../img/wats.png"
 import face from "../../img/face.png"
+
+
 import linked from "../../img/linked.png"
 import insta from "../../img/insta.png"
 import { Link } from 'react-router-dom';
+import { Container } from '@mui/material';
 
 
 
 const FotterHome = () => {
   return (
+    
     <FotterStyle >
+        <Container>
         <div className='main-fotter' >
         <div className='item-fotter' >
             <h2>location</h2>
@@ -43,21 +48,20 @@ const FotterHome = () => {
        
 
         
-        
+      </Container>   
     </FotterStyle>
+   
   )
 }
 const FotterStyle = styled.div`
+   
+    padding: 5px 0rem;
     background-color: var(--primary-color);
-    padding: 40px 4rem;
-    @media (max-width:500px) {
-    padding: 40px 2rem;    
-    }
     .main-fotter{
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
+    justify-content:space-between;
+    align-items: flex-start;
     @media (max-width:500px) {
         justify-content: center;   
     }

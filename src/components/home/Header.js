@@ -8,16 +8,18 @@ import Button from '../glopal/Button'
 import { Container } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { HashLink as Link } from 'react-router-hash-link';
 
-const Header = ({title}) => {
+
+const Header = () => {
   useEffect(()=>{
     AOS.init({
       duration:2000
     });
   },[])
   return (
+    
     <HeaderStyle id="Home" >
+      
       {/*main photo header */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1925 1047.96">
         <g id="Group_11" data-name="Group 11" transform="translate(1 -100)">
@@ -27,7 +29,7 @@ const Header = ({title}) => {
         </g>
       </svg>
        {/*content header */}
-      <Container maxWidth="xl">
+       <Container maxWidth="lg" >
       <div className='content-header' >
         <div className='left-header'>
           <div className='super-img' data-aos-anchor-placement="top-bottom">
@@ -48,53 +50,56 @@ const Header = ({title}) => {
           <Button title="Know More" />
           
 
-        </div>
+        </div> 
       </div>
       </Container>
 
     </HeaderStyle>
+   
   )
 }
 const HeaderStyle = styled.header`
 margin: 0;
 padding: 0;
-position: relative;
+
 overflow: hidden;
+height: 100vh;
 //ovrelay photo
 &::before{
       content: "";
       position: absolute;
-      top: 0;
+      top: 0px;
       right: 0;
       left: 0;
-      bottom: 0;
+      bottom: 0px;
       background-image: url(${dream});
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 1;
       opacity: 0.1;
+      overflow: hidden;
       
     }
 
 @media (max-width:763px) {
      width: 100%;
-     height: 100vh;
+     height: 110vh;
   }
 svg{
     background-size: cover;
     top: 0;
     width: 101%;
-    position: relative;
+    
 }
 .content-header{
   
   display: flex;
-  bottom:  0;
+
   .left-header{
     .super-img {
       position: absolute;
       z-index: 2;
-      top: 30%;
+      top: 25%;
       left: 0;
       transform: translateY(-30%);
       z-index: 2;

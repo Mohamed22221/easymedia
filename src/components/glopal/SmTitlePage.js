@@ -16,11 +16,8 @@ const SmTitlePage = ({title}) => {
 }
 const SmStyleTitle =styled.div`
    margin: 2rem 0;
-    padding:0rem 4rem;
-    position: relative;
-    @media (max-width:1000px) {
-    padding: 0rem 2rem;    
-    }
+position: relative;
+
     
     h1{
         font-size: 32px;

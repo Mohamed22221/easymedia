@@ -4,6 +4,7 @@ import PutPortfolio from '../glopal/PutPortfolio.js'
 import SmTitlePage from '../glopal/SmTitlePage'
 import FilterData from './FilterData.js'
 import DataProject from '../dataportfolio/DataProject.js'
+import { Container } from '@mui/material'
 const Portfolio = () => {
 const [menueItems , setMenue] = useState(DataProject)
 
@@ -17,6 +18,7 @@ setMenue(FillterData)
 } 
 
   return (
+    <Container maxWidth="lg">
     <PortfolioStyle id='Portfolio'>
         <SmTitlePage title="Portfolio"/>
         <div className='main-Portfolio'>
@@ -29,6 +31,7 @@ setMenue(FillterData)
 
         </div>
     </PortfolioStyle>
+    </Container>
   )
 }
 const PortfolioStyle = styled.div`

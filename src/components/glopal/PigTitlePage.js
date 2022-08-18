@@ -20,11 +20,8 @@ const PigTitlePage = ({title , h1 ,spanprimary }) => {
 }
 const PigStyleTitle =styled.div`
     .main-title{
-    padding:0 4rem;
     position: relative;
-    @media (max-width:1000px) {
-    padding: 0 2.2rem;    
-    } 
+
     h1{
         font-size: 38px;
         
