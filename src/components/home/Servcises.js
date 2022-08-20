@@ -10,10 +10,7 @@ import svg5 from "../../img/svg5.svg"
 import { Container } from '@mui/material'
 
 
-
-
-
-const Servcises = ({ title }) => {
+const Servcises = () => {
 
     return (
         <Container maxWidth="lg" >

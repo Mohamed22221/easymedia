@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import post from "../img/post-bg.png"
 const GlopalStyle = createGlobalStyle`
  :root{
     --primary-color:#E53516;
@@ -21,6 +22,7 @@ const GlopalStyle = createGlobalStyle`
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes MoveUpDown {
     0%, 100% {
     transform: translateX(0);
@@ -47,7 +49,7 @@ html {
   }
 body{
      font-family: 'Nunito', sans-serif;
-    ;
+
 }
 
 

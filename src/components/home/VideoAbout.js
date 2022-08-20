@@ -14,11 +14,9 @@ const VideoAbout = () => {
   )
 }
 const VideoStyle = styled.video`
-margin: 9rem 0 1rem 0;
+margin: 9rem 0 0rem 0;
 width:100%;
 padding: 10px;
-
-
 
 `
 export default VideoAbout
