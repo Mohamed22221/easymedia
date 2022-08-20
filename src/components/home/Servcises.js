@@ -7,12 +7,15 @@ import svg2 from "../../img/svg2.svg"
 import svg3 from "../../img/svg3.svg"
 import svg4 from "../../img/svg4.svg"
 import svg5 from "../../img/svg5.svg"
+import waveGlopal from "../../img/wave-glopal.svg"
+
 import { Container } from '@mui/material'
 
 
 const Servcises = () => {
 
     return (
+        <MainServices>
         <Container maxWidth="lg" >
             <ServciesStyle id='Services' data-aos="fade-right">
                 <SmTitlePage title="Services" />
@@ -71,10 +74,24 @@ const Servcises = () => {
                 </div>
             </ServciesStyle>
         </Container>
+        </MainServices>
     )
 }
-const ServciesStyle = styled.div`
+const MainServices = styled.div`
+background: url(${waveGlopal});
+background-position: bottom center;
+background-size: contain;
+background-repeat: no-repeat;
+position: relative;
+z-index: 0;
+@media (max-width:500px ) {
+    background-position: -2050px center;
+    background-size: cover;
+}
 
+`
+const ServciesStyle = styled.div`
+overflow: auto;
 .main-servces{
     gap: 70px 70px  ;
     display: grid;
@@ -90,10 +107,13 @@ const ServciesStyle = styled.div`
     border: 1px solid #eff2f7;
     border-radius: 1rem;
     transition: 0.3s;
+    background-color: white;
     
     &:hover {
-    background:#d3200030;
+   
     transform: translateY(-15px);
+
+
     }
 
     h3{

@@ -60,10 +60,7 @@ const ContactStyle = styled.div`
     background-image: url(${post});
     background-size:cover;
     background-repeat: no-repeat;
-   
     height:100%;
-    
-    
     .main-title{
      position: absolute;
      top:  0px;

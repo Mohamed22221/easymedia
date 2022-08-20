@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import wats from "../../img/wats.png"
 import face from "../../img/face.png"
-
-
 import linked from "../../img/linked.png"
 import insta from "../../img/insta.png"
 import { Link } from 'react-router-dom';
@@ -56,7 +54,7 @@ const FotterHome = () => {
 const FotterStyle = styled.div`
    
     padding: 5px 0rem;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     .main-fotter{
     display: flex;
     flex-wrap: wrap;
