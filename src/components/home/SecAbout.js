@@ -97,11 +97,9 @@ margin: 10px 0 0px 0;
     
     .apout-img{
      position: relative;
-
     width: 250px;
     z-index: 2;
     animation:MoveUpDown 3s linear infinite ;
-
     @media (max-width:500px) {
     width: 190px ;
     margin-left: 80px;

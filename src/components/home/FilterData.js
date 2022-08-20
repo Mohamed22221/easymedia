@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import LinkIcon from '@mui/icons-material/Link';
 import CloseIcon from '@mui/icons-material/Close';
+
 const FilterData = ({menueItems}) => {
   const [show , setShow] = useState(false)
   const [imgSrc , setImgSrc ] = useState("")
@@ -34,7 +35,7 @@ const FilterData = ({menueItems}) => {
                <div className='apout' about={item.type} >
                <h1 className="card-title">{item.name}</h1>
                <p>{item.discription}</p>
-               <a href={item.link} target="_blank">{item.link === "" ? null : <LinkIcon className="LinkIcon" />}</a>
+               <a href={item.link} target="_blank">{item.type === "Social" ? null : <LinkIcon className="LinkIcon" />}</a>
                </div>
               </div> 
               )
@@ -69,7 +70,11 @@ const StyleFilter = styled.div`
     overflow: hidden;
     transform: scale(0);
     img{
+      position: fixed;
       height: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      
       
 
     }
@@ -85,6 +90,9 @@ const StyleFilter = styled.div`
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    img{
+      
+    }
   }
   .exit{
     position: absolute;
@@ -97,38 +105,38 @@ const StyleFilter = styled.div`
   }
     .card{
         position: relative;
-        width: 260px;
+        width: 265px;
         height: 250px;
+
         &:hover img{
           transform:scale(1.1) ;
           overflow: hidden;
         }
 
-    
     }
-    margin: 0 auto;
+    
   padding:3rem 0.5rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+   flex-wrap: wrap;
+   justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+ 
+
     
   gap: 30px;
-@media (max-width:500px) {
-    padding:3rem 2.5rem;
-} 
+
 .img{
-    position: relative;
+  width: 100%;
     transition: 0.5;
     overflow: hidden;
     img{
         transition: 1s;
-        width: 270px;
+        width: 100%;
         height: 245px;
         border: 0px solid;
         border-radius: 7px;
         padding: 60px 30px 30px;
-        
-
     }
 }
 .apout{
@@ -146,9 +154,7 @@ const StyleFilter = styled.div`
  cursor: pointer;
 padding: 0px 0;
 box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
--webkit-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
--moz-box-shadow: -1px 5px 18px -7px rgba(46,46,46,0.82);
-  border-radius: 10px;
+border-radius: 10px;
  h1{
      transition: 0.5s;
      color: white;

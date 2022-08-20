@@ -7,7 +7,6 @@ import svg2 from "../../img/svg2.svg"
 import svg3 from "../../img/svg3.svg"
 import svg4 from "../../img/svg4.svg"
 import svg5 from "../../img/svg5.svg"
-import waveGlopal from "../../img/wave-glopal.svg"
 
 import { Container } from '@mui/material'
 
@@ -74,20 +73,23 @@ const Servcises = () => {
                 </div>
             </ServciesStyle>
         </Container>
+        <div className="wave"></div>
         </MainServices>
     )
 }
 const MainServices = styled.div`
-background: url(${waveGlopal});
+
 background-position: bottom center;
 background-size: contain;
 background-repeat: no-repeat;
 position: relative;
 z-index: 0;
+
 @media (max-width:500px ) {
     background-position: -2050px center;
     background-size: cover;
 }
+
 
 `
 const ServciesStyle = styled.div`
@@ -110,9 +112,8 @@ overflow: auto;
     background-color: white;
     
     &:hover {
-   
     transform: translateY(-15px);
-
+ background-color: #e5351666;
 
     }
 

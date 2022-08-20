@@ -2,15 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 const PutPortfolio = ({Filter}) => {
+  const [filterActive, setFilterActive] = useState("All");
+  const btnsFilter = [
+    {id:1 , name: "All" , title : "All"  },
+    {id:2 , name: "Software" , title : "Software Services"  },
+    {id:3 , name: "Media" , title : "Media Production"  },
+    {id:4 , name: "Social" , title : "Social Media"  },
+    {id:5 , name: "Branding" , title : "Branding"  },
 
+
+  ]
+  const HandelFilter = (item) =>{
+     Filter(item.name)
+     setFilterActive(item.name)
+  }
   return (
 
     <StyleButoon data-aos="fade-down">
-        <button type='button' onClick={()=>Filter('All') } >All</button>
-        <button type='button' onClick={()=>Filter('cv') } >Software Services</button>
-        <button onClick={()=>Filter('adobe xd') } >Media Production</button>
-        <button onClick={()=>Filter('Social') } >Social Media</button>
-        <button onClick={()=>Filter('prand') } >Branding</button>
+      {btnsFilter.map(item => (
+         <button onClick={() => HandelFilter(item)}  className={`${filterActive === item.name ? 'active' : ''}`} key={item.id}>
+             {item.title}
+         </button>
+        ))
+      }
+
         
     </StyleButoon>
 
@@ -34,11 +49,15 @@ button{
   margin: 8px;
   border-radius: 5px;
   transition: 0.5s;
-  &:hover , &:active ,&:focus  {
+  &:hover   {
     background-color:var(--primary-color) ;
     color: white;
   }
 
+}
+.active{
+  background-color:var(--primary-color) ;
+    color: white;
 }
 
 

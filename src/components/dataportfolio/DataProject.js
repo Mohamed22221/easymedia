@@ -17,7 +17,7 @@ const DataProject = [
  
     {
         id:1,
-        type:"cv",
+        type:"Software",
         name:"kjragh",
         discription:"Biography",
         img:port1,
@@ -27,7 +27,7 @@ const DataProject = [
     },
     {
         id:2,
-        type:"cv",
+        type:"Software",
         name:"Triple Zero",
         discription:"Triple Zero",
         img:port2,
@@ -37,7 +37,7 @@ const DataProject = [
     },
     {
         id:3,
-        type:"cv",
+        type:"Software",
         name:"JB arrangement",
         discription:"Flowers",
         link:"https://jb-flowers.com/" ,
@@ -48,7 +48,7 @@ const DataProject = [
 
     {
         id:5,
-        type:"React",
+        type:"Media",
         name:"King Chicken",
         discription:"king-chicken",
         link:"https://www.king-chicken.net/",
@@ -59,7 +59,7 @@ const DataProject = [
      
     {
         id:6,
-        type:"React",
+        type:"Media",
         name:"project 6",
         discription:"Food Noodles",
         img:port1,
@@ -116,7 +116,7 @@ const DataProject = [
     },
     {
         id:12,
-        type:"prand",
+        type:"Branding",
         name:"JB arrangement flowers",
         discription:"JB arrangement flowers",
         link:pdfFlowers ,
@@ -124,7 +124,7 @@ const DataProject = [
     },
     {
         id:13,
-        type:"prand",
+        type:"Branding",
         name:"Kalimantan perfumes ",
         discription:"Kalimintan perfumes ",
         link:pdfpranding ,
@@ -132,7 +132,7 @@ const DataProject = [
     },
     {
         id:14,
-        type:"prand",
+        type:"Branding",
         name:"Lawyer Safa Khalid ",
         discription:"Lawyer Safa Khalid",
         link:pdfSafa ,
