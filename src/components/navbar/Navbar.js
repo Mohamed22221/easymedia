@@ -25,9 +25,9 @@ const Navbar = () => {
             <li>  <NavHashLink onClick={boxHandler} to="/easymedia#Home" > Home </NavHashLink></li>
             <li><Link onClick={boxHandler} to="/easymedia#About" >About us</Link></li>
             <li><Link onClick={boxHandler} to="/easymedia#Services" > Services</Link></li>
-            <li><Link onClick={boxHandler} to="/easymedia#Contact" >Contact</Link></li>
             <li><Link onClick={boxHandler} to="/easymedia#Portfolio" > Portfolio</Link></li>
             <li><Link onClick={boxHandler} to="/easymedia#Client" >Client</Link></li>
+            <li><Link onClick={boxHandler} to="/easymedia#Contact" >Contact</Link></li>
             <li> <NavHashLink onClick={boxHandler} to="/Careers" > Careers </NavHashLink></li>
             <li> <NavHashLink onClick={boxHandler} to="/subscribe" >Subscribe</NavHashLink></li>
 

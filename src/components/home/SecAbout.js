@@ -7,7 +7,7 @@ import apoutimg from '../../img/02.png'
 
 const SecAbout = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" id='About' >
      <MainAbout>
       <div className='left-about'>
         <PigTitlePage title="About" h1="var(--background-dark-color)" spanprimary="var(--primary-color)"/>
