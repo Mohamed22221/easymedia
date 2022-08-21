@@ -1,147 +1,164 @@
 import React from 'react'
 import styled from 'styled-components'
 import CopyrightIcon from '@mui/icons-material/Copyright';
-import wats from "../../img/wats.png"
-import face from "../../img/face.png"
-import linked from "../../img/linked.png"
-import insta from "../../img/insta.png"
-import { Link } from 'react-router-dom';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaWhatsappSquare } from 'react-icons/fa';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { BsArrowRightShort } from 'react-icons/bs';
+
+import { HashLink as Link, NavHashLink } from 'react-router-hash-link';
+import Logo from "../../img/logo.png"
+
 import { Container } from '@mui/material';
 
 
 
 const FotterHome = () => {
-  return (
-    
-    <FotterStyle >
-        <Container>
-        <div className='main-fotter' >
-        <div className='item-fotter' >
-            <h2>location</h2>
-            <p><a href='https://www.google.com/search?q=easymedia.agency&rlz=1C1BNSD_enKW969KW969&sxsrf=APq-WBv-4tg1tdu9mJyJcXGkuuHLnNMfOw:1650241798316&ei=p69cYtibD8nBgQa31Y6wDQ&oq=easy&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIGCCMQJxATMgcILhDUAhBDMgoILhDHARDRAxBDMgoILhDHARDRAxBDMgQIABBDMgQILhBDMgQIABBDMgUIABCABDoHCCMQsAMQJzoHCAAQRxCwAzoHCAAQsAMQQzoOCC4QgAQQsQMQxwEQ0QM6DgguEIAEELEDEMcBEKMCOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQowI6CwguEIAEELEDENQCOgUILhCABDoKCC4QsQMQ1AIQQzoLCC4QxwEQ0QMQywE6BQgAEMsBOgQIABAeOgcIIxDqAhAnOg0ILhDHARCvARDqAhAnOggILhCABBCxAzoFCAAQsQM6CAgAELEDEIMBOggIABCABBCxAzoICC4QgAQQ1AI6CggAELEDEIMBEENKBAhBGABKBAhGGABQ7glYgz5g70ZoC3ABeACAAaMCiAH6GJIBBDItMTKYAQCgAQGwAQrIAQrAAQE&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=2705044429460152125&lqi=ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5&ved=2ahUKEwiznbrhrZz3AhVs_bsIHVOZBnUQvS56BAgREAE&sa=X&rlst=f#rlfi=hd:;si:2705044429460152125,l,ChBlYXN5bWVkaWEuYWdlbmN5WhIiEGVhc3ltZWRpYSBhZ2VuY3mSARBtYXJrZXRpbmdfYWdlbmN5;mv:[[29.634084417525198,48.60180323463209],[29.243000675189805,47.90142481666334]]' target="_blank">Kuwait : Fahad Al-Salem street <span></span> </a></p>
-            <p><a href='https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%AD%D9%85%D8%AF%D8%A7%D9%86+%D8%A8%D9%86+%D8%B1%D8%A7%D8%B4%D8%AF+%D8%A2%D9%84+%D9%85%D9%83%D8%AA%D9%88%D9%85+%D9%84%D9%84%D9%85%D9%88%D9%87%D8%A8%D8%A9+%D9%88%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1%E2%80%AD/@25.2184219,55.2705717,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f425f0f73a993:0x7f54c67bf775f6b3!8m2!3d25.2183939!4d55.2684297' target="_blank">Dubai : Hamdan Bin Rashid Al Maktoum <span> </span>  </a></p>
-            <p><a href='#'>Egypt : ismailia</a></p>
-            
-        </div>
-        <div className='item-fotter' >
-            <h2>contact</h2>
-            <p><a href='mailto:info@easymedia.agency'>info@easymedia.agency</a></p>
-            <p><a href='tel:+965 2220 9570'>+965 2220 9570</a></p>
-            <p><a href='tel:+965 5537 2333'>+965 5537 2333</a></p>
-            <p><a href='tel:+971 54 233 3232'>+971 54 233 3232</a></p>
-        </div>
-        <div className='item-fotter' >
-            <h2>Social media</h2>
-            <a href='https://www.facebook.com/easymedia.agency' target="_blank"><img src={face} alt="face" /></a>
-            <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><img src={insta} alt="insta" /></a>
-            <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true'  target="_blank"><img src={linked} alt="insta" /></a>
-            <a href='https://wa.me/0096555372333'  target="_blank"><img src={wats} alt="wats" /></a>
-        </div>
-        </div>
-        <div className='copy-right' >
+    return (
 
-        <h2>Copyright<span><CopyrightIcon className='copy'/></span></h2>
-        <Link to="/terms"><p>Terms and Conditions</p></Link>
-        </div>
-       
+        <FotterStyle >
+            <div class="custom-shape-divider-top-1661081115">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <Container>
+                <div className='main-fotter' >
+                    <div className='about-fotter'>
+                        <div className='item-fotter'>
+                            <img src={Logo} />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                            <div className='item-social' >
+                                
+                                <a href='https://www.facebook.com/easymedia.agency' target="_blank"><FaFacebookSquare /></a>
+                                <a href='https://www.instagram.com/easymedia_agency/' target="_blank"><FaInstagramSquare /></a>
+                                <a href='https://www.linkedin.com/company/easy-media-agency/mycompany/?viewAsMember=true' target="_blank"><FaLinkedin /></a>
+                                <a href='https://wa.me/0096555372333' target="_blank"><FaWhatsappSquare /></a>
+                            </div>
+                        </div>
+                        <div className='item-fotter links'>
+                            <h3>Useful Links</h3>
+                            <Link  to="/easymedia#About" >About us<BsArrowRightShort /></Link>
+                            <Link  to="/easymedia#Services" > Services<BsArrowRightShort /></Link>
+                            <Link  to="/easymedia#Contact" >Contact<BsArrowRightShort /></Link>
+                            <Link  to="/easymedia#Portfolio" > Portfolio<BsArrowRightShort /></Link>
+                            <Link  to="/easymedia#Client" >Client<BsArrowRightShort /></Link>
+                        </div>
+                        <div className='item-fotter links'>
+                            <h3>Other Links</h3>
+                             <Link  to="/Careers" > Careers<BsArrowRightShort /> </Link>
+                             <Link  to="/subscribe" >Subscribe<BsArrowRightShort /></Link>
+                             <Link  to="/terms" >Terms<BsArrowRightShort /></Link>
 
-        
-      </Container>   
-    </FotterStyle>
-   
-  )
+                        </div>
+
+                    </div>
+                    <div className='copy-right' >
+                        <span>© Copyrights 2020 axsis All rights reserved.</span>
+                        <Link to="/terms"><p>Terms and Conditions</p></Link>
+                    </div>
+                </div>
+            </Container>
+        </FotterStyle>
+
+    )
 }
 const FotterStyle = styled.div`
    
     padding: 5px 0rem;
-    background: var(--primary-color);
-    .main-fotter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: flex-start;
-    @media (max-width:500px) {
-        justify-content: center;   
+    background:var(--primary-color);
+    height:450px;
+    position: relative;
+    z-index: 4;
+    @media (max-width:630px) {
+        height: 100%;
     }
-    .item-fotter{
-        
-        padding: 15px;
+    .custom-shape-divider-top-1661081115 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1661081115 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 186px;
+}
+
+.custom-shape-divider-top-1661081115 .shape-fill {
+    fill: #FFFFFF;
+}
+.main-fotter{
+    .about-fotter{
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 150px;
+         color: #e4c7c7;
+         @media (max-width:630px) {
         flex-direction: column;
-        @media (max-width:500px) {
-        align-items: center;   
+        }
+        .item-fotter{
+            img{
+                width: 180px;
+               
+            }
+            p{
+                width: 290px;
+                font-size: 14px;
+                padding: 10px 0;
+            }
+            svg{
+                margin: 10px 4px;
+                font-size: 35px;
+                color: white;
+                transition: 0.4s;
+                &:hover{
+                    transform: translateY(-8px);
+                }
+            }
+        }
+        .links{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            h3{
+                margin: 10px 0;
+                color: white;
+            }
+            a{
+                margin: 4px 0;
+                color: #e4c7c7;
+                display: flex;
+                align-items: center;
+                svg{
+                    font-size: 15px;
+                    margin: 0 4px;
+                }
+                &:hover{
+                    color: white;
+                }
+            }
+        }
     }
-        &:last-child{
-            display: block;
-            flex-direction: row; 
-        }
-        h2{
-            font-weight: 400;
-            font-size: 30px;
-            color: white;
-            text-transform: uppercase;
-            padding: 8px 0;
-        }
-        a{
-            color: white;
-            opacity: 0.8;
-            cursor: pointer;
-            font-size: 15px;
-            @media (max-width:600px) {
-             span{
-                 display: none;
-             }
-             }
-             img{
-                 width: 30px;
-                 margin:0 11px;
-                 
-                
 
-             }
-        }
-
-    }
-    }
     .copy-right{
+        padding: 20px 0;
+        border-top:1px solid #e4c7c7 ;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: 2px;
-        padding: 80px 0 40px;
-        a{
-            color: white;
-            margin-top: 8px;
-            font-size: 12px;
+        justify-content: space-between;
+        span , a{
+            font-size: 14px;
+            color: #e4c7c7;
+            cursor: pointer;
         }
-        h2{
-            padding-right: 18px;
-            position: relative;
-            span .copy{
-            position: absolute;
-            top: 2px;
-            margin-left: 4px;
-        }
-        &::after{
-            position: absolute;
-            
-            content: "";
-            top: -50px;
-            width: 250px;
-            height: 1px;
-            color: white;
-            background-color: white;
-            left: 44%;
-            transform: translate(-46%);
-        }
-        }
-
     }
-    
+}
 
 `
 export default FotterHome

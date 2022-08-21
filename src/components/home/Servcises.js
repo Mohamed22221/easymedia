@@ -7,88 +7,73 @@ import svg2 from "../../img/svg2.svg"
 import svg3 from "../../img/svg3.svg"
 import svg4 from "../../img/svg4.svg"
 import svg5 from "../../img/svg5.svg"
-
 import { Container } from '@mui/material'
+import { useState } from 'react'
+import OneServes from './OneServes'
+
 
 
 const Servcises = () => {
+    const [showString, setShowString] = useState(true)
+    const DataServices = [
+        {
+            id: 1,
+            title: "Social media",
+            des: "Building a social media presence is very important for any business as it is a direct link with the user base. Create a big user traffic on all platforms with static ads, dynamic product ads and much more",
+            img: svg
+        },
+        {
+            id: 2,
+            title: "Branding design",
+            des: "Branding is a system that makes you recognizable through all the mediums, mainly consisting of a name, logo, visual identity and digital product design.",
+            img: svg1
+        },
+        {
+            id: "3",
+            title: "Advertising",
+            des: "Advertising is a wingman to your company. Grab attention with attractive and descriptive ads, that leaves a mark in the viewers head",
+            img: svg2
+        },
+        {
+            id: "4",
+            title: "Photography",
+            des: "Photography is all about expressing without speaking. Have photos taken professionally to better visually describe your products without saying a word.",
+            img: svg3
+        },
+        {
+            id: "5",
+            title: "Development",
+            des: "We work on developing our services continuously from time to time and adapt our marketing platform to keep pace with all developments and circumstances",
+            img: svg4
+        },
+        {
+            id: "6",
+            title: "E-service",
+            des: "Building yourself an E-Store and taking your business online completely changes thedynamics of your business as it introduces newmarkets for you to conquer",
+            img: svg5
+        },
+    ]
+
 
     return (
         <MainServices>
-        <Container maxWidth="lg" >
-            <ServciesStyle id='Services' data-aos="fade-right">
-                <SmTitlePage title="Services" />
-                <div className='main-servces'>
-                    <div className='item-servces' >
-                        <img src={svg} alt="photo" />
-                        <h3>Social media</h3>
-                        <p>Building a social media presence is very
-                            important for any business as it is a direct link
-                            with the user base. Create a big user traffic on all
-                            platforms with static ads, dynamic product ads
-                            and much more</p>
-                        <button>READ MORE</button>
+            <Container maxWidth="lg" >
+                <ServciesStyle id='Services' data-aos="fade-right">
+                    <SmTitlePage title="Services" />
+                    <div className='main-servces'>
+                        {DataServices.map((item) => {
+                            return (
+                                <OneServes {...item} key={item.id} />
+                            )
+                        })}
                     </div>
-                    <div className='item-servces' >
-                        <img src={svg1} alt="photo" />
-                        <h3>Branding design</h3>
-                        <p>Branding is a system that makes you recognizable
-                            through all the mediums, mainly consisting of a
-                            name, logo, visual identity and digital product
-                            design.</p>
-                        <button>READ MORE</button>
-                    </div>
-                    <div className='item-servces' >
-                        <img src={svg2} alt="photo" />
-                        <h3>Advertising</h3>
-                        <p>Advertising is a wingman to your company. Grab
-                            attention with attractive and descriptive ads,
-                            that leaves a mark in the viewers head</p>
-                        <button>Read More</button>
-                    </div>
-                    <div className='item-servces' >
-                        <img src={svg3} alt="photo" />
-                        <h3>Photography</h3>
-                        <p>Photography is all about expressing without
-                            speaking. Have photos taken professionally to
-                            better visually describe your products without
-                            saying a word.</p>
-                        <button>READ MORE</button>
-                    </div>
-                    <div className='item-servces' >
-                        <img src={svg4} alt="photo" />
-                        <h3>Development</h3>
-                        <p>We work on developing our services
-                            continuously from time to time and adapt our
-                            marketing platform to keep pace with all
-                            developments and circumstances</p>
-                        <button>READ MORE</button>
-                    </div>
-                    <div className='item-servces' >
-                        <img src={svg5} alt="photo" />
-                        <h3>E-service</h3>
-                        <p>{"Building yourself an E-Store and taking your business online completely changes thedynamics of your business as it introduces newmarkets for you to conquer".substring(0, 80)}...</p>
-                        <button >READ MORE</button>
-                    </div>
-                </div>
-            </ServciesStyle>
-        </Container>
-        <div className="wave"></div>
+                </ServciesStyle>
+            </Container>
+            <div className="wave"></div>
         </MainServices>
     )
 }
 const MainServices = styled.div`
-
-background-position: bottom center;
-background-size: contain;
-background-repeat: no-repeat;
-position: relative;
-z-index: 0;
-
-@media (max-width:500px ) {
-    background-position: -2050px center;
-    background-size: cover;
-}
 
 
 `
@@ -103,17 +88,14 @@ overflow: auto;
 
 .item-servces{
     box-shadow: 0 3px 20px 0 rgb(0 0 0 / 5%);
-    padding-top: 40px;
     padding: 40px 40px 10px 40px;
     max-height: 430px;
     border: 1px solid #eff2f7;
     border-radius: 1rem;
     transition: 0.3s;
-    background-color: white;
-    
     &:hover {
     transform: translateY(-15px);
- background-color: #e5351666;
+    background-color: #e5351666;
 
     }
 
