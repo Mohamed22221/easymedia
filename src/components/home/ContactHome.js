@@ -1,9 +1,8 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
-import post from "../../img/post-bg.png"
 import PigTitlePage from '../glopal/PigTitlePage'
-import hero from "../../img/hero-1-bg.png"
+
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
@@ -94,7 +93,6 @@ const ContactStyle = styled.div`
  //bg img
  &::after{
     position: absolute;
-    content: url(${hero});
     width: 100%;
     top: 0;
     z-index: -1;
@@ -169,7 +167,6 @@ const ContactStyle = styled.div`
 
 
  .img{
-    background-image: url(${post});
     background-size:cover;
     background-repeat: no-repeat;
     height:100%;

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import post from "../img/post-bg.png"
 const GlopalStyle = createGlobalStyle`
  :root{
     --primary-color:#E53516;
